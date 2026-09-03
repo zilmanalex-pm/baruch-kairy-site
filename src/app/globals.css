@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Design tokens from design-rules.md — Baruch Kairy Professional Site
+ * All values are LOCKED. Do not modify without updating design-rules.md.
+ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Colors (Tranquil Waters palette) ── */
+  --color-primary: #40798C;
+  --color-primary-dark: #345F6E;
+  --color-primary-active: #2B4F5C;
+  --color-accent: #70A9A1;
+  --color-accent-dark: #4A8A80;
+  --color-text: #1F363D;
+  --color-text-secondary: #4A6B6A;
+  --color-subtle: #B8D4C8;
+  --color-subtle-bg: #E8F0E4;
+  --color-bg: #F7FAF5;
+  --color-white: #FFFFFF;
+  --color-error: #C0392B;
+  --color-dark: #1F363D;
+
+  /* ── Spacing (8px base) ── */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+
+  /* ── Typography (single font, different sizes/weights) ── */
+  --font-heading: var(--font-heebo), 'Heebo', sans-serif;
+  --font-body: var(--font-heebo), 'Heebo', sans-serif;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(45, 52, 54, 0.06);
+  --shadow-md: 0 4px 12px rgba(45, 52, 54, 0.1);
+
+  /* ── Layout ── */
+  --max-width: 1120px;
+  --max-width-text: 680px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Base Styles ── */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Hebrew body text: never add letter-spacing */
+* {
+  letter-spacing: 0;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+}
+
+.skip-to-content:focus {
+  top: 0.5rem;
+  inset-inline-start: 0.5rem;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* LTR override for phone numbers, emails, and URLs */
+[dir="ltr"],
+.ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Scroll-reveal animation (design-rules section 11) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Focus ring style */
+:focus-visible {
+  outline: 3px solid rgba(64, 121, 140, 0.4);
+  outline-offset: 2px;
+}
+
+/* Remove default focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
 }
