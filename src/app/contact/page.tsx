@@ -7,33 +7,14 @@ import {
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr"
 import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { META, CONTACT } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: "צור קשר | ברוך קאירי, פסיכולוג תעסוקתי",
-  description:
-    "לתיאום שיחת היכרות עם ברוך קאירי טלפון, וואטסאפ או מייל.",
+  title: META.contact.title,
+  description: META.contact.description,
 }
 
-const channels = [
-  {
-    icon: Phone,
-    label: "טלפון",
-    value: "052-515-1351",
-    href: "tel:+972525151351",
-  },
-  {
-    icon: WhatsappLogo,
-    label: "וואטסאפ",
-    value: "שליחת הודעה מהירה",
-    href: "https://wa.me/972525151351",
-  },
-  {
-    icon: EnvelopeSimple,
-    label: 'דוא"ל',
-    value: "kairybaruch@gmail.com",
-    href: "mailto:kairybaruch@gmail.com",
-  },
-]
+const iconMap = { Phone, WhatsappLogo, EnvelopeSimple } as const
 
 export default function ContactPage() {
   return (
@@ -57,20 +38,19 @@ export default function ContactPage() {
           <Section background="bg">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
-                בואו נדבר
+                {CONTACT.pageTitle}
               </h1>
               <SectionDivider className="mt-lg mb-xl !justify-start" />
               <p className="text-lg leading-[1.7] text-text-secondary mb-xl">
-                פנייה ראשונה לא מחייבת. לפעמים מספיקה שיחה קצרה כדי להבין אם זה
-                מתאים ומה הצעד הבא. אתם מוזמנים לפנות בדרך הנוחה לכם.
+                {CONTACT.pageIntro}
               </p>
             </div>
 
             {/* Channel cards - equal-sized grid */}
             <div className="max-w-[var(--max-width)] bg-subtle-bg rounded-lg py-xl px-md">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#40798C]/15">
-                {channels.map((channel) => {
-                  const Icon = channel.icon
+                {CONTACT.channels.map((channel) => {
+                  const Icon = iconMap[channel.iconName as keyof typeof iconMap]
                   return (
                     <a
                       key={channel.label}

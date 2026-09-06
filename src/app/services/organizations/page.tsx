@@ -17,113 +17,15 @@ import {
   Microphone,
 } from "@phosphor-icons/react/dist/ssr"
 import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { META, ORGANIZATIONS, LECTURES } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: "מיון והערכה לארגונים | ברוך קאירי",
-  description:
-    "מרכזי הערכה, פיתוח כלי מיון מותאמים, בדק בית מיוני, מחקרי מעקב והכשרת מנהלים. תהליכי מיון שנבנים בדיוק לארגון שלכם לא מהמדף.",
+  title: META.organizations.title,
+  description: META.organizations.description,
 }
 
-const pillars = [
-  {
-    icon: Fingerprint,
-    title: "ייחודיות",
-    description:
-      "מיון בוטיק, ממוקד בצרכים שלך ומותאם בקפידה — חליפה לפי מידה. אתה לא \"עוד לקוח\", אלא אתה \"ה-לקוח\".",
-  },
-  {
-    icon: House,
-    title: "בעלות",
-    description:
-      "גמישות ושליטה. הכלים נשארים אצלכם, הידע קיים בבית. אנחנו בונים יכולת פנימית, לא תלות בגורם חיצוני.",
-  },
-  {
-    icon: Lightning,
-    title: "יעילות",
-    description:
-      "תהליכים ממוקדים שלא מבזבזים זמן — לא שלכם ולא של המועמדים.",
-  },
-  {
-    icon: Scales,
-    title: "הוגנות",
-    description:
-      "תהליכי מיון שקופים ומבוססי מחקר, שנותנים למועמד הזדמנות אמיתית להראות את עצמו.",
-  },
-]
-
-const orgServices = [
-  {
-    icon: UsersFour,
-    title: "אבחון, מיון והערכה",
-    description:
-      "לארגונים שצריכים להפעיל תהליכי מיון ממיון מועמדים לקבלה ועד מרכז הערכה לקידום ולמיפוי פוטנציאל ניהולי. בנייה והפעלה של מרכז הערכה מותאם לארגון, כתיבת חוות דעת מקצועיות, הפעלת סוללות מבחנים ותרגילי סימולציה, וליווי הארגון בקבלת ההחלטה.",
-  },
-  {
-    icon: Wrench,
-    title: "פיתוח כלי מיון",
-    description:
-      "לארגונים שרוצים כלי מיון שנבנו בדיוק בשבילם לא שאלונים גנריים, אלא כלים שמודדים את מה שחשוב לתפקיד הספציפי. פיתוח מבחנים, שאלונים, ראיונות מובנים וסימולציות, מותאמים לתרבות הארגונית ולפרופיל התפקיד.",
-  },
-  {
-    icon: MagnifyingGlass,
-    title: '"בדק בית" מיוני',
-    description:
-      "למנהלי משאבי אנוש שיודעים שתהליך המיון שלהם לא נותן את התוצאות — תחלופה גבוהה, אי-התאמות חוזרות, תחושה שמשהו לא עובד. בדיקת יעילות ואפקטיביות תהליכי המיון הפועלים אצלכם בארגון. הבדיקה נערכת בעזרת מודל אבחון ייחודי המייצר אינדקס למידת ההתאמה של התהליך הקיים — כלים, מתודולוגיה, עקביות ותוקף. בסוף התהליך תקבלו דוח ברור עם ממצאים והמלצות מעשיות — מה לתקן, מה להחליף, ומה לשמר.",
-  },
-  {
-    icon: ChartLine,
-    title: "מחקרי מעקב",
-    description:
-      "לארגונים שרוצים לדעת אם ההחלטות שקיבלו בתהליכי המיון אכן עובדות. מחקר שיטתי שבודק את הקשר בין הביצועים במיון לבין ההצלחה בפועל, ומאפשר ללמוד מהניסיון ולשפר את התהליך באופן מתמשך.",
-  },
-  {
-    icon: Chalkboard,
-    title: "הכשרה למנהלים ומשאבי אנוש",
-    description:
-      "למנהלים שמראיינים מועמדים ולצוותי HR שרוצים לשדרג מיומנויות הערכה. סדנאות מעשיות: ראיון עבודה מובנה, הערכה על בסיס ראיות, ומתן משוב בונה. כלים שמשתמשים בהם כבר מהיום שאחרי.",
-  },
-  {
-    icon: Handshake,
-    title: "ייעוץ בבחירת ספקים",
-    description:
-      "לארגונים שצריכים לבחור ספקי מיון והערכה ורוצים לעשות את זה נכון — לא על בסיס מחיר בלבד, אלא על בסיס התאמה מקצועית אמיתית. ליווי בכל שלבי הבחירה: כתיבת מכרזים בתחומי מיון והערכה, הגדרת פרמטרים להערכת ספקים, ניתוח חלופות, והמלצה מבוססת.",
-  },
-]
-
-const lectures = [
-  {
-    title: "מנהיגות ומנהיגים בראי הפסיכולוגיה",
-    subtitle: "מה הפסיכולוגיה יודעת על מנהיגות, ומה זה אומר בפועל.",
-  },
-  {
-    title: "בחן את עצמך — על אבחון, מבחנים ואנשים",
-    subtitle: "מה באמת מודדים מבחנים פסיכולוגיים, ואיך לקרוא את התוצאות נכון.",
-  },
-  {
-    title: "העבודה היא חיינו",
-    subtitle: "על בחירת קריירה ותעסוקה במעגלי החיים — איך בחירות תעסוקתיות משתנות.",
-  },
-  {
-    title: "\"לאסוף את השברים\"",
-    subtitle: "חוסן אישי והתמודדות — כלים פסיכולוגיים לתקופות שינוי ומשבר.",
-  },
-  {
-    title: "\"איזהו חכם?\"",
-    subtitle: "על אינטליגנציות בעת המודרנית — מה זה אומר להיות חכם היום.",
-  },
-  {
-    title: "\"אף אחד לא מושלם\"",
-    subtitle: "על לקויות למידה ודרכי אבחונן — הבנה מעשית.",
-  },
-  {
-    title: "דור העתיד — מאפיינים פסיכולוגיים",
-    subtitle: "מה מאפיין את הדורות החדשים ואיך זה משפיע על עולם העבודה.",
-  },
-  {
-    title: "קבלת החלטות",
-    subtitle: "מנגנונים פסיכולוגיים שמשפיעים על הבחירות שלנו, ואיך להשתמש בהם.",
-  },
-]
+const pillarIconMap = { Fingerprint, House, Lightning, Scales } as const
+const serviceIconMap = { UsersFour, Wrench, MagnifyingGlass, ChartLine, Chalkboard, Handshake } as const
 
 export default function OrganizationsPage() {
   return (
@@ -132,13 +34,11 @@ export default function OrganizationsPage() {
       <Section background="bg">
         <div className="max-w-[var(--max-width-text)]">
           <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
-            שירותים לארגונים — IHS
+            {ORGANIZATIONS.pageTitle}
           </h1>
           <SectionDivider className="mt-lg mb-xl !justify-start" />
           <p className="text-lg leading-[1.7] text-text-secondary mb-md">
-            IHS הוקמה מתוך הבנה שתהליכי מיון צריכים להיות מדויקים, הוגנים,
-            ומותאמים לארגון הספציפי. לא עוד תבניות גנריות — אלא כלים שנבנו
-            בדיוק לצרכים שלכם, מופעלים בתוך הארגון, וכוללים מעקב ובקרה.
+            {ORGANIZATIONS.pageIntro}
           </p>
         </div>
       </Section>
@@ -151,11 +51,11 @@ export default function OrganizationsPage() {
         <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
-              העקרונות שמנחים אותנו
+              {ORGANIZATIONS.pillarsHeading}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-lg max-w-[var(--max-width-text)] mx-auto">
-              {pillars.map((pillar) => {
-                const Icon = pillar.icon
+              {ORGANIZATIONS.pillars.map((pillar) => {
+                const Icon = pillarIconMap[pillar.iconName as keyof typeof pillarIconMap]
                 return (
                   <div
                     key={pillar.title}
@@ -181,18 +81,18 @@ export default function OrganizationsPage() {
       </div>
       </ScrollReveal>
 
-      {/* Section 3 Service cards 2-col grid (bg) */}
+      {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative overflow-hidden">
         <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-40px] top-[30%]" design="diagonal-lines" color="orange" size={220} animation="drift-diagonal" opacity={0.45} />
         <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
-              פירוט השירותים
+              {ORGANIZATIONS.servicesHeading}
             </h2>
             <div className="flex flex-wrap justify-center gap-lg">
-              {orgServices.map((service) => {
-                const Icon = service.icon
+              {ORGANIZATIONS.services.map((service) => {
+                const Icon = serviceIconMap[service.iconName as keyof typeof serviceIconMap]
                 return (
                   <div key={service.title} className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
                     <Card className="h-full" interactive>
@@ -230,13 +130,13 @@ export default function OrganizationsPage() {
         <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
-              הרצאות והכשרות
+              {LECTURES.sectionHeading}
             </h2>
             <p className="text-lg leading-[1.7] text-text-secondary mb-xl max-w-[var(--max-width-text)]">
-              מגוון הרצאות מקצועיות לארגונים, כנסים ומסגרות לימודיות — כל אחת משלבת ידע פסיכולוגי עדכני עם דוגמאות מהשטח.
+              {LECTURES.sectionIntro}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
-              {lectures.map((lecture) => (
+              {LECTURES.items.map((lecture) => (
                 <div
                   key={lecture.title}
                   className="bg-white rounded-[12px] border border-[#CFE0C3] p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
@@ -252,7 +152,7 @@ export default function OrganizationsPage() {
               ))}
             </div>
             <p className="text-base leading-[1.7] text-text-secondary mt-lg">
-              מעוניינים בהרצאה לארגון, לכנס או למסגרת לימודית? <a href="/contact" className="text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150">צרו קשר</a>
+              {LECTURES.contactPrompt} <a href={LECTURES.contactLinkHref} className="text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150">{LECTURES.contactLinkLabel}</a>
             </p>
           </Section>
         </div>

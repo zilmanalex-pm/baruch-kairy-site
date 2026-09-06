@@ -9,81 +9,14 @@ import {
   Microphone,
 } from "@phosphor-icons/react/dist/ssr"
 import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { META, WORKSHOPS, LECTURES } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: "סדנאות העצמה תעסוקתית | ברוך קאירי",
-  description:
-    "סדנאות קריירה לאנשים בצמתים תעסוקתיים מחליפי מקצוע, סטודנטים ואנשים בתקופות מעבר. כלים מקצועיים, עבודה אישית ודיון קבוצתי בקבוצות קטנות.",
+  title: META.workshops.title,
+  description: META.workshops.description,
 }
 
-const infoCards = [
-  {
-    icon: Users,
-    title: "למי מתאים?",
-    items: [
-      "אנשים שמרגישים תקיעות בקריירה",
-      "מחליפי מקצוע ובוחנים כיוונים חדשים",
-      "סטודנטים לפני כניסה לשוק העבודה",
-      "אנשים בתקופות מעבר תעסוקתי",
-    ],
-  },
-  {
-    icon: ListChecks,
-    title: "מה בפנים?",
-    items: [
-      "כלים מקצועיים מעולם הפסיכולוגיה התעסוקתית",
-      "עבודה אישית ודיון קבוצתי",
-      "בחינת חוזקות, מוטיבציות וכיוונים",
-      "צעדים קונקרטיים שאפשר לעשות כבר עכשיו",
-      "משך הסדנה: יום וחצי",
-    ],
-  },
-  {
-    icon: Trophy,
-    title: "עם מה יוצאים?",
-    items: [
-      "בהירות לגבי הכיוון",
-      "כלים מעשיים לקבלת החלטות",
-      "תחושה שההחלטה הבאה — אפשר לקחת אותה",
-      "הזמנה למפגש סיכום אישי עם מיפוי אישיותי-תעסוקתי מעמיק",
-    ],
-  },
-]
-
-const lectures = [
-  {
-    title: "מנהיגות ומנהיגים בראי הפסיכולוגיה",
-    subtitle: "מה הפסיכולוגיה יודעת על מנהיגות, ומה זה אומר בפועל.",
-  },
-  {
-    title: "בחן את עצמך — על אבחון, מבחנים ואנשים",
-    subtitle: "מה באמת מודדים מבחנים פסיכולוגיים, ואיך לקרוא את התוצאות נכון.",
-  },
-  {
-    title: "העבודה היא חיינו",
-    subtitle: "על בחירת קריירה ותעסוקה במעגלי החיים — איך בחירות תעסוקתיות משתנות.",
-  },
-  {
-    title: "\"לאסוף את השברים\"",
-    subtitle: "חוסן אישי והתמודדות — כלים פסיכולוגיים לתקופות שינוי ומשבר.",
-  },
-  {
-    title: "\"איזהו חכם?\"",
-    subtitle: "על אינטליגנציות בעת המודרנית — מה זה אומר להיות חכם היום.",
-  },
-  {
-    title: "\"אף אחד לא מושלם\"",
-    subtitle: "על לקויות למידה ודרכי אבחונן — הבנה מעשית.",
-  },
-  {
-    title: "דור העתיד — מאפיינים פסיכולוגיים",
-    subtitle: "מה מאפיין את הדורות החדשים ואיך זה משפיע על עולם העבודה.",
-  },
-  {
-    title: "קבלת החלטות",
-    subtitle: "מנגנונים פסיכולוגיים שמשפיעים על הבחירות שלנו, ואיך להשתמש בהם.",
-  },
-]
+const infoCardIconMap = { Users, ListChecks, Trophy } as const
 
 export default function WorkshopsPage() {
   return (
@@ -92,14 +25,11 @@ export default function WorkshopsPage() {
       <Section background="bg">
         <div className="max-w-[var(--max-width-text)]">
           <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
-            סדנאות העצמה תעסוקתית
+            {WORKSHOPS.pageTitle}
           </h1>
           <SectionDivider className="mt-lg mb-xl !justify-start" />
           <p className="text-lg leading-[1.7] text-text-secondary">
-            מרגישים תקועים? לא בטוחים מה הכיוון? לפעמים השינוי מתחיל מהבנה
-            שאתם לא לבד בזה. הסדנה עושה שימוש מרכזי בקבוצה כפלטפורמה — ללמידה
-            על עצמך, על המאפיינים שלך בהקשר צוותי וארגוני, ועל הכיוונים שמתאימים
-            לך.
+            {WORKSHOPS.pageIntro}
           </p>
         </div>
       </Section>
@@ -111,8 +41,8 @@ export default function WorkshopsPage() {
         <div className="relative">
           <Section background="subtle-bg">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-              {infoCards.map((card) => {
-                const Icon = card.icon
+              {WORKSHOPS.infoCards.map((card) => {
+                const Icon = infoCardIconMap[card.iconName as keyof typeof infoCardIconMap]
                 return (
                   <div
                     key={card.title}
@@ -145,17 +75,15 @@ export default function WorkshopsPage() {
             {/* "חשוב לדעת" callout */}
             <div className="mt-xl bg-white rounded-[12px] border border-[#CFE0C3] p-[24px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] max-w-[var(--max-width-text)]">
               <h3 className="font-heading text-lg font-bold text-text mb-sm">
-                חשוב לדעת
+                {WORKSHOPS.importantNoteHeading}
               </h3>
               <p className="font-body text-base leading-[1.7] text-text-secondary">
-                הסדנה אינה עוסקת ברכישת מיומנויות כגון כתיבת קורות חיים והכנה לראיונות.
-                הסדנה עוסקת ברכישת תובנות אישיות כחלק מתהליך קבוצתי — הבנה עמוקה יותר
-                של מי אתם ומה מתאים לכם.
+                {WORKSHOPS.importantNoteText}
               </p>
             </div>
 
             <p className="text-sm leading-[1.7] text-text-secondary mt-xl">
-              הסדנאות מתקיימות בקבוצות קטנות, ומותאמות לקהל היעד.
+              {WORKSHOPS.smallGroupNote}
             </p>
           </Section>
         </div>
@@ -169,13 +97,13 @@ export default function WorkshopsPage() {
         <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
-              הרצאות והכשרות
+              {LECTURES.sectionHeading}
             </h2>
             <p className="text-lg leading-[1.7] text-text-secondary mb-xl max-w-[var(--max-width-text)]">
-              מגוון הרצאות מקצועיות לארגונים, כנסים ומסגרות לימודיות — כל אחת משלבת ידע פסיכולוגי עדכני עם דוגמאות מהשטח.
+              {LECTURES.sectionIntro}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
-              {lectures.map((lecture) => (
+              {LECTURES.items.map((lecture) => (
                 <div
                   key={lecture.title}
                   className="bg-white rounded-[12px] border border-[#CFE0C3] p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
@@ -191,7 +119,7 @@ export default function WorkshopsPage() {
               ))}
             </div>
             <p className="text-base leading-[1.7] text-text-secondary mt-lg">
-              מעוניינים בהרצאה לארגון, לכנס או למסגרת לימודית? <a href="/contact" className="text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150">צרו קשר</a>
+              {LECTURES.contactPrompt} <a href={LECTURES.contactLinkHref} className="text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150">{LECTURES.contactLinkLabel}</a>
             </p>
           </Section>
         </div>

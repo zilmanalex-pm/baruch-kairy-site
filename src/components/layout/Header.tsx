@@ -5,15 +5,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
+import { NAV_ITEMS } from "@/lib/content"
 
-const navItems = [
-  { label: "דף הבית", href: "/" },
-  { label: "אודות", href: "/about" },
-  { label: "שירותים לפרט", href: "/services" },
-  { label: "שירותים לארגונים", href: "/services/organizations" },
-  { label: "סדנאות", href: "/workshops" },
-  { label: "שאלות נפוצות", href: "/faq" },
-]
+// Navigation items imported from @/lib/content
 
 export function Header() {
   const pathname = usePathname()
@@ -56,7 +50,7 @@ export function Header() {
 
         {/* Desktop nav - left side in RTL */}
         <nav className="hidden lg:flex items-center gap-[28px] me-auto ms-xl" aria-label="ניווט ראשי">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -118,7 +112,7 @@ export function Header() {
           className="mx-auto max-w-[var(--max-width)] px-lg pb-xl flex flex-col gap-lg"
           aria-label="תפריט נייד"
         >
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}

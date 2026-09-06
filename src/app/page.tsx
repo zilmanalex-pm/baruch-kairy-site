@@ -5,11 +5,11 @@ import { TrustBar } from "@/components/sections/TrustBar"
 import { AboutPreview } from "@/components/sections/AboutPreview"
 import { ScrollReveal } from "@/components/ui/ScrollReveal"
 import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { META, HOME } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: "ברוך קאירי פסיכולוג תעסוקתי | ייעוץ קריירה ומיון",
-  description:
-    "ברוך קאירי, פסיכולוג תעסוקתי מומחה עם 30 שנות ניסיון. ייעוץ קריירה וליווי בצמתים תעסוקתיים לפרט, מיון והערכה ובניית תהליכים לארגונים. שיחת היכרות ללא עלות.",
+  title: META.home.title,
+  description: META.home.description,
 }
 
 export default function HomePage() {
@@ -29,12 +29,12 @@ export default function HomePage() {
         />
         <div className="relative">
           <HeroSection
-            name="ברוך קאירי"
-            title="פסיכולוג תעסוקתי"
-            headline="לדעת מה הצעד הבא בקריירה ובמיון"
-            subheadline="ברוך קאירי, פסיכולוג תעסוקתי מומחה עם 30 שנות ניסיון, מלווה אנשים בצמתים תעסוקתיים וארגונים בבניית תהליכי מיון והערכה שעובדים."
-            imageSrc="/images/baruch-portrait3.png"
-            imageAlt="ברוך קאירי, פסיכולוג תעסוקתי מומחה"
+            name={HOME.hero.name}
+            title={HOME.hero.title}
+            headline={HOME.hero.headline}
+            subheadline={HOME.hero.subheadline}
+            imageSrc={HOME.hero.imageSrc}
+            imageAlt={HOME.hero.imageAlt}
           />
         </div>
       </div>
@@ -52,25 +52,8 @@ export default function HomePage() {
         />
         <div className="relative">
           <RoutingCards
-            sectionHeading="איך אני יכול לעזור"
-            cards={[
-              {
-                icon: "individual",
-                heading: "בצומת תעסוקתי?",
-                description:
-                  "ייעוץ קריירה, ליווי בתקופות שינוי, וכלים לקבלת ההחלטה הנכונה בקצב שלך.",
-                linkLabel: "עוד על שירותים לפרט",
-                linkHref: "/services",
-              },
-              {
-                icon: "organization",
-                heading: "תהליך המיון לא עובד?",
-                description:
-                  "אבחון, בנייה ושדרוג של תהליכי מיון והערכה מותאם לארגון, לא מהמדף.",
-                linkLabel: "עוד על שירותים לארגונים",
-                linkHref: "/services/organizations",
-              },
-            ]}
+            sectionHeading={HOME.routingCards.sectionHeading}
+            cards={[...HOME.routingCards.cards]}
           />
         </div>
       </div>
@@ -89,12 +72,7 @@ export default function HomePage() {
         />
         <div className="relative">
           <TrustBar
-            badges={[
-              { stat: "30+", label: "שנות ניסיון" },
-              { label: "פסיכולוג תעסוקתי מומחה-מדריך" },
-              { label: 'סא"ל (מיל׳) ראש מערכי מיון והערכה בצה"ל' },
-              { label: "ליווי עשרות ארגונים מובילים" },
-            ]}
+            badges={[...HOME.trustBar]}
           />
         </div>
       </div>
@@ -103,9 +81,9 @@ export default function HomePage() {
       {/* Section 4 About Preview (subtle-bg) */}
       <ScrollReveal>
       <AboutPreview
-        text="פסיכולוג תעסוקתי מומחה עם שלושה עשורים של ניסיון בליווי אנשים בצמתים תעסוקתיים ובבניית תהליכי מיון והערכה לארגונים. הגישה שלי מבוססת על שותפות, הקשבה וכלים מקצועיים שמותאמים בדיוק לצרכים שלכם."
-        linkLabel="קצת עליי"
-        linkHref="/about"
+        text={HOME.aboutPreview.text}
+        linkLabel={HOME.aboutPreview.linkLabel}
+        linkHref={HOME.aboutPreview.linkHref}
       />
       </ScrollReveal>
       </div>
