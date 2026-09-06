@@ -146,9 +146,9 @@ export default function OrganizationsPage() {
       {/* Section 2 Four pillars as white icon cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-0 left-[-40px] top-[15%]" design="spirograph" color="teal" size={250} animation="spin-slow" opacity={0.35} />
-        <DecorativeCircle className="absolute hidden lg:block z-0 right-[-40px] bottom-[10%]" design="spirograph" color="orange" size={220} animation="spin-slow" opacity={0.4} />
-        <div className="relative z-10">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-40px] top-[15%]" design="spirograph" color="teal" size={250} animation="spin-slow" opacity={0.35} />
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-40px] bottom-[10%]" design="spirograph" color="orange" size={220} animation="spin-slow" opacity={0.4} />
+        <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
               העקרונות שמנחים אותנו
@@ -184,8 +184,8 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards 2-col grid (bg) */}
       <ScrollReveal>
       <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-0 right-[-40px] top-[30%]" design="diagonal-lines" color="orange" size={220} animation="drift-diagonal" opacity={0.45} />
-        <div className="relative z-10">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-40px] top-[30%]" design="diagonal-lines" color="orange" size={220} animation="drift-diagonal" opacity={0.45} />
+        <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
               פירוט השירותים
@@ -226,8 +226,8 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-0 left-[-50px] top-[20%]" design="diagonal-lines" color="teal" size={280} animation="drift-diagonal" opacity={0.35} />
-        <div className="relative z-10">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-50px] top-[20%]" design="diagonal-lines" color="teal" size={280} animation="drift-diagonal" opacity={0.35} />
+        <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
               הרצאות והכשרות

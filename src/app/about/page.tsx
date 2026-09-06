@@ -26,7 +26,7 @@ export default function AboutPage() {
       <div className="relative overflow-hidden">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
-          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[450px] h-[450px] pointer-events-none opacity-[0.8] z-0 animate-[float_8s_ease-in-out_infinite]"
+          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[450px] h-[450px] pointer-events-none opacity-[0.8] z-[1] animate-[float_8s_ease-in-out_infinite]"
           aria-hidden="true"
         >
           <Image
@@ -39,7 +39,7 @@ export default function AboutPage() {
         </div>
 
         <Section background="bg">
-          <div className="max-w-[var(--max-width-text)] relative z-10">
+          <div className="max-w-[var(--max-width-text)] relative">
             <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
               קצת על עצמי
             </h1>
@@ -106,9 +106,9 @@ export default function AboutPage() {
           size={300}
           animation="spin-slow"
           opacity={0.5}
-          className="absolute hidden lg:block z-0 right-[-100px] top-[20%]"
+          className="absolute hidden lg:block z-[1] right-[-100px] top-[20%]"
         />
-        <div className="relative z-10">
+        <div className="relative">
           <Section background="subtle-bg">
             <div className="flex flex-col lg:flex-row gap-xl lg:gap-2xl items-stretch">
               {/* Text column */}

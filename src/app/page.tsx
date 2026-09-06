@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <div className="relative">
 
-      <div className="relative z-10">
+      <div className="relative">
       {/* Section 1 Hero (bg) */}
       <div className="relative overflow-hidden">
         <DecorativeCircle

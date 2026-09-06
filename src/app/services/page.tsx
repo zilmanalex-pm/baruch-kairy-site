@@ -48,8 +48,8 @@ export default function ServicesPage() {
     <>
       {/* Section 1 Page header (bg) */}
       <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-0 left-[-50px] top-[10%]" design="dots-spiral" color="orange" size={320} animation="spin-slow" opacity={0.45} />
-        <div className="relative z-10">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-50px] top-[10%]" design="dots-spiral" color="orange" size={320} animation="spin-slow" opacity={0.45} />
+        <div className="relative">
           <Section background="bg">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
@@ -68,8 +68,8 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-0 right-[-30px] bottom-[-30px]" design="dots-spiral" color="orange" size={250} animation="spin-slow" opacity={0.35} />
-        <div className="relative z-10">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-30px] bottom-[-30px]" design="dots-spiral" color="orange" size={250} animation="spin-slow" opacity={0.35} />
+        <div className="relative">
           <Section background="subtle-bg">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">
               {services.map((service) => {
