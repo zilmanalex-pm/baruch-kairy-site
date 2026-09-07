@@ -72,8 +72,8 @@ export default function AboutPage() {
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
         <DecorativeCircle
-          design="dots-spiral"
-          color="orange"
+          design="swirl-arcs"
+          color="teal"
           size={350}
           animation="spin-slow"
           opacity={0.7}
