@@ -22,10 +22,10 @@ export default function HomePage() {
         <DecorativeCircle
           design="split-rings"
           color="orange"
-          size={700}
+          size={480}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] left-[-180px] bottom-[-200px]"
+          className="absolute hidden lg:block left-[-100px] bottom-[-80px]"
         />
         <div className="relative">
           <HeroSection
@@ -45,10 +45,10 @@ export default function HomePage() {
         <DecorativeCircle
           design="sunburst"
           color="teal"
-          size={600}
+          size={340}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] right-[-150px] top-[-120px]"
+          className="absolute hidden lg:block right-[-80px] top-[-60px]"
         />
         <div className="relative">
           <RoutingCards

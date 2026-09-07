@@ -46,8 +46,7 @@ export default function OrganizationsPage() {
       {/* Section 2 Four pillars as white icon cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-150px] top-[10%]" design="spirograph" color="teal" size={650} animation="spin-slow" opacity={0.7} />
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-130px] bottom-[5%]" design="spirograph" color="orange" size={550} animation="spin-slow" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block left-[-100px] top-[10%]" design="spirograph" color="teal" size={480} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
@@ -84,7 +83,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-130px] top-[25%]" design="diagonal-lines" color="orange" size={550} animation="spin-slow" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block right-[-80px] top-[25%]" design="diagonal-lines" color="orange" size={340} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -126,7 +125,7 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-150px] top-[15%]" design="diagonal-lines" color="teal" size={650} animation="spin-slow" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block left-[-80px] top-[15%]" design="dots-dense" color="teal" size={380} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

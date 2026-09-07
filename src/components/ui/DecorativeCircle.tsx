@@ -67,7 +67,7 @@ export function DecorativeCircle({
         alt=""
         width={size}
         height={size}
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain rounded-full"
         aria-hidden="true"
       />
     </div>

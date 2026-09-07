@@ -15,11 +15,11 @@ export default function FAQPage() {
       {/* Section 1 FAQ accordion (bg) */}
       <div className="relative">
         {/* 4 sunburst circles on the left in different sizes */}
-        <div className="hidden lg:block absolute left-[-150px] top-[-100px] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="orange" size={600} animation="spin-slow" opacity={0.7} />
+        <div className="hidden lg:block absolute left-[-80px] top-[-60px] pointer-events-none" aria-hidden="true">
+          <DecorativeCircle design="sunburst" color="orange" size={450} animation="spin-slow" opacity={0.7} />
         </div>
-        <div className="hidden lg:block absolute right-[-150px] bottom-[-100px] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="teal" size={550} animation="spin-slow" opacity={0.7} />
+        <div className="hidden lg:block absolute right-[-80px] bottom-[-60px] pointer-events-none" aria-hidden="true">
+          <DecorativeCircle design="split-rings" color="teal" size={320} animation="spin-slow" opacity={0.7} />
         </div>
         <div className="relative">
           <Section background="bg">
