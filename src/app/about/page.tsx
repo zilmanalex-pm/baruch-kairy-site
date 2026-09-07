@@ -29,7 +29,7 @@ export default function AboutPage() {
       <div className="relative">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
-          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite]"
+          className="hidden lg:block absolute left-[-120px] top-1/2 -translate-y-1/2 w-[750px] h-[750px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite] rounded-full overflow-hidden"
           aria-hidden="true"
         >
           <Image
@@ -74,10 +74,10 @@ export default function AboutPage() {
         <DecorativeCircle
           design="dots-spiral"
           color="orange"
-          size={300}
+          size={600}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] right-[-100px] top-[20%]"
+          className="absolute hidden lg:block z-[1] right-[-160px] top-[10%]"
         />
         <div className="relative">
           <Section background="subtle-bg">

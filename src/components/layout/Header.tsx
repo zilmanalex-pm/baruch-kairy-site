@@ -49,7 +49,7 @@ export function Header() {
         </Link>
 
         {/* Desktop nav - left side in RTL */}
-        <nav className="hidden lg:flex items-center gap-[28px] me-auto ms-xl" aria-label="ניווט ראשי">
+        <nav className="hidden lg:flex items-center gap-[28px] mx-auto" aria-label="ניווט ראשי">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}

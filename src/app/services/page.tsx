@@ -23,7 +23,7 @@ export default function ServicesPage() {
     <>
       {/* Section 1 Page header (bg) */}
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-50px] top-[10%]" design="dots-spiral" color="orange" size={420} animation="spin-slow" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-150px] top-[5%]" design="dots-spiral" color="orange" size={650} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="bg">
             <div className="max-w-[var(--max-width-text)]">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-30px] bottom-[-30px]" design="dots-spiral" color="orange" size={350} animation="spin-slow" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-150px] bottom-[-100px]" design="dots-spiral" color="teal" size={600} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="subtle-bg">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">

@@ -53,7 +53,7 @@ export function DecorativeCircle({
 
   return (
     <div
-      className={`pointer-events-none select-none ${className}`}
+      className={`pointer-events-none select-none rounded-full overflow-hidden ${className}`}
       style={{
         width: size,
         height: size,

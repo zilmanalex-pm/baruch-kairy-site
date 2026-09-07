@@ -22,10 +22,10 @@ export default function HomePage() {
         <DecorativeCircle
           design="split-rings"
           color="orange"
-          size={420}
+          size={700}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] left-[-120px] bottom-[-80px]"
+          className="absolute hidden lg:block z-[1] left-[-180px] bottom-[-200px]"
         />
         <div className="relative">
           <HeroSection
@@ -45,10 +45,10 @@ export default function HomePage() {
         <DecorativeCircle
           design="sunburst"
           color="teal"
-          size={300}
+          size={600}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] right-[-60px] top-[-40px]"
+          className="absolute hidden lg:block z-[1] right-[-150px] top-[-120px]"
         />
         <div className="relative">
           <RoutingCards
@@ -62,14 +62,7 @@ export default function HomePage() {
       {/* Section 3 Trust Bar (bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle
-          design="swirl-arcs"
-          color="orange"
-          size={450}
-          animation="spin-slow"
-          opacity={0.7}
-          className="absolute hidden lg:block z-[1] left-[-100px] top-1/2 -translate-y-1/2"
-        />
+
         <div className="relative">
           <TrustBar
             badges={[...HOME.trustBar]}
