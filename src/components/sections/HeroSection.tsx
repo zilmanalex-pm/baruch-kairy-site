@@ -7,6 +7,7 @@ interface HeroSectionProps {
   subheadline: string
   imageSrc: string
   imageAlt: string
+  transparentBg?: boolean
 }
 
 export function HeroSection({
@@ -16,9 +17,10 @@ export function HeroSection({
   subheadline,
   imageSrc,
   imageAlt,
+  transparentBg,
 }: HeroSectionProps) {
   return (
-    <section className="relative bg-bg pt-3xl pb-2xl sm:pt-4xl sm:pb-3xl lg:pt-4xl lg:pb-3xl overflow-hidden">
+    <section className={`relative ${transparentBg ? "" : "bg-bg"} pt-3xl pb-2xl sm:pt-4xl sm:pb-3xl lg:pt-4xl lg:pb-3xl overflow-hidden`}>
       <div className="mx-auto max-w-[var(--max-width)] px-lg sm:px-[40px] lg:px-0 relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-xl lg:gap-2xl">
           {/* Text column right side in RTL */}

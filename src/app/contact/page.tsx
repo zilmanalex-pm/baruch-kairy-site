@@ -20,7 +20,7 @@ const iconMap = { Phone, WhatsappLogo, EnvelopeSimple } as const
 export default function ContactPage() {
   return (
     <>
-      <div className="relative">
+      <div className="relative bg-bg">
         {/* Decorative circles */}
         <div
           className="hidden lg:block absolute right-[-80px] top-[10%] pointer-events-none z-[1]"
@@ -36,7 +36,7 @@ export default function ContactPage() {
         </div>
 
         <div className="relative z-[2]">
-          <Section background="bg">
+          <Section background="none">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
                 {CONTACT.pageTitle}

@@ -18,7 +18,7 @@ export default function HomePage() {
 
       <div className="relative">
       {/* Section 1 Hero (bg) */}
-      <div className="relative">
+      <div className="relative bg-bg">
         <DecorativeCircle
           design="split-rings"
           color="orange"
@@ -29,6 +29,7 @@ export default function HomePage() {
         />
         <div className="relative z-[2]">
           <HeroSection
+            transparentBg
             name={HOME.hero.name}
             title={HOME.hero.title}
             headline={HOME.hero.headline}
@@ -41,7 +42,7 @@ export default function HomePage() {
 
       {/* Section 2 Routing Cards (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative">
+      <div className="relative bg-subtle-bg">
         <DecorativeCircle
           design="sunburst"
           color="teal"
@@ -52,6 +53,7 @@ export default function HomePage() {
         />
         <div className="relative z-[2]">
           <RoutingCards
+            transparentBg
             sectionHeading={HOME.routingCards.sectionHeading}
             cards={[...HOME.routingCards.cards]}
           />

@@ -36,10 +36,10 @@ export default function WorkshopsPage() {
 
       {/* Section 2 Three info cards (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative">
+      <div className="relative bg-subtle-bg">
         <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-100px] top-[-40px]" design="swirl-arcs" color="orange" size={480} animation="spin-slow" opacity={0.7} />
         <div className="relative z-[2]">
-          <Section background="subtle-bg">
+          <Section background="none">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
               {WORKSHOPS.infoCards.map((card) => {
                 const Icon = infoCardIconMap[card.iconName as keyof typeof infoCardIconMap]
@@ -92,10 +92,10 @@ export default function WorkshopsPage() {
 
       {/* Section 3 Lectures (bg) */}
       <ScrollReveal>
-      <div className="relative">
+      <div className="relative bg-bg">
         <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-80px] bottom-[-60px]" design="spirograph" color="teal" size={340} animation="spin-slow" opacity={0.7} />
         <div className="relative z-[2]">
-          <Section background="bg">
+          <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
               {LECTURES.sectionHeading}
             </h2>

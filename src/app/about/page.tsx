@@ -26,7 +26,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Section 1 Page title + personal narrative (bg) */}
-      <div className="relative">
+      <div className="relative bg-bg">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
           className="hidden lg:block absolute left-[-100px] top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite] rounded-full overflow-hidden"
@@ -41,7 +41,7 @@ export default function AboutPage() {
           />
         </div>
 
-        <Section background="bg">
+        <Section background="none">
           <div className="max-w-[var(--max-width-text)] relative">
             <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
               {ABOUT.pageTitle}
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
       {/* Section 2 Approach (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative">
+      <div className="relative bg-subtle-bg">
         <DecorativeCircle
           design="dots-spiral"
           color="orange"
@@ -80,7 +80,7 @@ export default function AboutPage() {
           className="absolute hidden lg:block z-[1] right-[-80px] top-[15%]"
         />
         <div className="relative z-[2]">
-          <Section background="subtle-bg">
+          <Section background="none">
             <div className="flex flex-col lg:flex-row gap-xl lg:gap-2xl items-stretch">
               {/* Text column */}
               <div className="flex-1">

@@ -13,7 +13,7 @@ export default function FAQPage() {
   return (
     <>
       {/* Section 1 FAQ accordion (bg) */}
-      <div className="relative">
+      <div className="relative bg-bg">
         {/* 4 sunburst circles on the left in different sizes */}
         <div className="hidden lg:block absolute left-[-80px] top-[-60px] pointer-events-none" aria-hidden="true">
           <DecorativeCircle design="sunburst" color="orange" size={450} animation="spin-slow" opacity={0.7} />
@@ -22,7 +22,7 @@ export default function FAQPage() {
           <DecorativeCircle design="split-rings" color="teal" size={320} animation="spin-slow" opacity={0.7} />
         </div>
         <div className="relative z-[2]">
-          <Section background="bg">
+          <Section background="none">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
                 {FAQ.pageTitle}

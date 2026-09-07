@@ -14,6 +14,7 @@ interface RoutingCardData {
 interface RoutingCardsProps {
   sectionHeading: string
   cards: [RoutingCardData, RoutingCardData]
+  transparentBg?: boolean
 }
 
 const iconMap = {
@@ -21,9 +22,9 @@ const iconMap = {
   organization: Buildings,
 }
 
-export function RoutingCards({ sectionHeading, cards }: RoutingCardsProps) {
+export function RoutingCards({ sectionHeading, cards, transparentBg }: RoutingCardsProps) {
   return (
-    <section className="bg-subtle-bg py-2xl sm:py-3xl lg:py-4xl">
+    <section className={`${transparentBg ? "" : "bg-subtle-bg"} py-2xl sm:py-3xl lg:py-4xl`}>
       <div className="mx-auto max-w-[var(--max-width)] px-lg sm:px-[40px] lg:px-0">
         <h2 className="font-heading text-2xl font-medium text-text text-center mb-xl lg:mb-2xl section-heading-accent">
           {sectionHeading}

@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils"
 
 export interface SectionProps extends HTMLAttributes<HTMLElement> {
   /** Background variant: alternating bg/subtle-bg per design spec */
-  background?: "bg" | "subtle-bg" | "primary" | "text"
+  background?: "bg" | "subtle-bg" | "primary" | "text" | "none"
   /** Narrow the content to text max-width (680px) */
   narrow?: boolean
   children?: ReactNode
@@ -23,6 +23,7 @@ function Section({ className, background = "bg", narrow = false, children, ...pr
     "subtle-bg": "bg-subtle-bg",
     primary: "bg-primary text-white",
     text: "bg-dark text-white/90",
+    none: "",
   }
 
   return (
