@@ -25,7 +25,7 @@ export default function HomePage() {
           size={480}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] left-[-100px] bottom-[-80px]"
+          className="absolute hidden lg:block z-[1] left-[30px] bottom-[-40px]"
         />
         <div className="relative z-[2]">
           <HeroSection
@@ -49,7 +49,7 @@ export default function HomePage() {
           size={340}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block z-[1] right-[-80px] top-[-60px]"
+          className="absolute hidden lg:block z-[1] right-[30px] top-[-30px]"
         />
         <div className="relative z-[2]">
           <RoutingCards
