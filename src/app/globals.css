@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 html {
+  overflow-x: clip;
   scrollbar-gutter: stable;
 }
 

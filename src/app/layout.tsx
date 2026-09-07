@@ -118,7 +118,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className="min-h-dvh flex flex-col bg-bg text-text font-body overflow-x-hidden">
+      <body className="min-h-dvh flex flex-col bg-bg text-text font-body">
         <a href="#main-content" className="skip-to-content">
           דלג לתוכן הראשי
         </a>
