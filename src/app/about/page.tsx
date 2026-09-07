@@ -29,7 +29,7 @@ export default function AboutPage() {
       <div className="relative">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
-          className="hidden lg:block absolute left-[-100px] top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none opacity-[0.7] animate-[spin-slow_45s_linear_infinite] rounded-full overflow-hidden"
+          className="hidden lg:block absolute left-[-100px] top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite] rounded-full overflow-hidden"
           aria-hidden="true"
         >
           <Image
@@ -77,9 +77,9 @@ export default function AboutPage() {
           size={350}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block right-[-80px] top-[15%]"
+          className="absolute hidden lg:block z-[1] right-[-80px] top-[15%]"
         />
-        <div className="relative">
+        <div className="relative z-[2]">
           <Section background="subtle-bg">
             <div className="flex flex-col lg:flex-row gap-xl lg:gap-2xl items-stretch">
               {/* Text column */}

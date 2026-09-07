@@ -23,8 +23,8 @@ export default function ServicesPage() {
     <>
       {/* Section 1 Page header (bg) */}
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block left-[-100px] top-[5%]" design="dots-spiral" color="orange" size={480} animation="spin-slow" opacity={0.7} />
-        <div className="relative">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-100px] top-[5%]" design="dots-spiral" color="orange" size={480} animation="spin-slow" opacity={0.7} />
+        <div className="relative z-[2]">
           <Section background="bg">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
@@ -42,8 +42,8 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block right-[-80px] bottom-[-40px]" design="swirl-arcs" color="teal" size={340} animation="spin-slow" opacity={0.7} />
-        <div className="relative">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-80px] bottom-[-40px]" design="swirl-arcs" color="teal" size={340} animation="spin-slow" opacity={0.7} />
+        <div className="relative z-[2]">
           <Section background="subtle-bg">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">
               {SERVICES.cards.map((service) => {

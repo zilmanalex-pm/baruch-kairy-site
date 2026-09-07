@@ -25,9 +25,9 @@ export default function HomePage() {
           size={480}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block left-[-100px] bottom-[-80px]"
+          className="absolute hidden lg:block z-[1] left-[-100px] bottom-[-80px]"
         />
-        <div className="relative">
+        <div className="relative z-[2]">
           <HeroSection
             name={HOME.hero.name}
             title={HOME.hero.title}
@@ -48,9 +48,9 @@ export default function HomePage() {
           size={340}
           animation="spin-slow"
           opacity={0.7}
-          className="absolute hidden lg:block right-[-80px] top-[-60px]"
+          className="absolute hidden lg:block z-[1] right-[-80px] top-[-60px]"
         />
-        <div className="relative">
+        <div className="relative z-[2]">
           <RoutingCards
             sectionHeading={HOME.routingCards.sectionHeading}
             cards={[...HOME.routingCards.cards]}
@@ -63,7 +63,7 @@ export default function HomePage() {
       <ScrollReveal>
       <div className="relative">
 
-        <div className="relative">
+        <div className="relative z-[2]">
           <TrustBar
             badges={[...HOME.trustBar]}
           />

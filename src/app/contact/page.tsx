@@ -23,19 +23,19 @@ export default function ContactPage() {
       <div className="relative">
         {/* Decorative circles */}
         <div
-          className="hidden lg:block absolute right-[-80px] top-[10%] pointer-events-none"
+          className="hidden lg:block absolute right-[-80px] top-[10%] pointer-events-none z-[1]"
           aria-hidden="true"
         >
           <DecorativeCircle design="dots-dense" color="teal" size={450} animation="spin-slow" opacity={0.7} />
         </div>
         <div
-          className="hidden lg:block absolute left-[-60px] bottom-[5%] pointer-events-none"
+          className="hidden lg:block absolute left-[-60px] bottom-[5%] pointer-events-none z-[1]"
           aria-hidden="true"
         >
           <DecorativeCircle design="diagonal-lines" color="orange" size={320} animation="spin-slow" opacity={0.7} />
         </div>
 
-        <div className="relative">
+        <div className="relative z-[2]">
           <Section background="bg">
             <div className="max-w-[var(--max-width-text)]">
               <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
