@@ -19,17 +19,8 @@ export default function HomePage() {
       <div className="relative">
       {/* Section 1 Hero (bg) */}
       <div className="relative bg-bg">
-        <DecorativeCircle
-          design="split-rings"
-          color="orange"
-          size={480}
-          animation="spin-slow"
-          opacity={0.7}
-          className="absolute hidden lg:block z-[1] left-[30px] bottom-[-40px]"
-        />
         <div className="relative z-[2]">
           <HeroSection
-            transparentBg
             name={HOME.hero.name}
             title={HOME.hero.title}
             headline={HOME.hero.headline}
