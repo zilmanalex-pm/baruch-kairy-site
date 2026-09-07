@@ -36,8 +36,8 @@ export default function WorkshopsPage() {
 
       {/* Section 2 Three info cards (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-30px] top-[-20px]" design="swirl-arcs" color="orange" size={320} animation="wobble" opacity={0.45} />
+      <div className="relative">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-30px] top-[-20px]" design="swirl-arcs" color="orange" size={420} animation="wobble" opacity={0.7} />
         <div className="relative">
           <Section background="subtle-bg">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
@@ -92,8 +92,8 @@ export default function WorkshopsPage() {
 
       {/* Section 3 Lectures (bg) */}
       <ScrollReveal>
-      <div className="relative overflow-hidden">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-100px] bottom-[-80px]" design="spirograph" color="teal" size={250} animation="pulse-gentle" opacity={0.4} />
+      <div className="relative">
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-100px] bottom-[-80px]" design="spirograph" color="teal" size={380} animation="pulse-gentle" opacity={0.7} />
         <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

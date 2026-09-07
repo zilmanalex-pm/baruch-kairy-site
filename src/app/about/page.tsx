@@ -26,10 +26,10 @@ export default function AboutPage() {
   return (
     <>
       {/* Section 1 Page title + personal narrative (bg) */}
-      <div className="relative overflow-hidden">
+      <div className="relative">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
-          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[450px] h-[450px] pointer-events-none opacity-[0.8] z-[1] animate-[float_8s_ease-in-out_infinite]"
+          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none opacity-[0.7] z-[1] animate-[float_8s_ease-in-out_infinite]"
           aria-hidden="true"
         >
           <Image
@@ -70,13 +70,13 @@ export default function AboutPage() {
 
       {/* Section 2 Approach (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <DecorativeCircle
           design="dots-spiral"
           color="orange"
           size={300}
           animation="spin-slow"
-          opacity={0.5}
+          opacity={0.7}
           className="absolute hidden lg:block z-[1] right-[-100px] top-[20%]"
         />
         <div className="relative">

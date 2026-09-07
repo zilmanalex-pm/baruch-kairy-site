@@ -18,13 +18,13 @@ export default function HomePage() {
 
       <div className="relative">
       {/* Section 1 Hero (bg) */}
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <DecorativeCircle
           design="split-rings"
           color="orange"
-          size={300}
+          size={420}
           animation="float"
-          opacity={0.5}
+          opacity={0.7}
           className="absolute hidden lg:block z-[1] left-[-120px] bottom-[-80px]"
         />
         <div className="relative">
@@ -41,13 +41,13 @@ export default function HomePage() {
 
       {/* Section 2 Routing Cards (subtle-bg) */}
       <ScrollReveal>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <DecorativeCircle
           design="sunburst"
           color="teal"
-          size={200}
+          size={300}
           animation="drift"
-          opacity={0.5}
+          opacity={0.7}
           className="absolute hidden lg:block z-[1] right-[-60px] top-[-40px]"
         />
         <div className="relative">
@@ -61,13 +61,13 @@ export default function HomePage() {
 
       {/* Section 3 Trust Bar (bg) */}
       <ScrollReveal>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <DecorativeCircle
           design="swirl-arcs"
           color="orange"
-          size={350}
+          size={450}
           animation="pulse-gentle"
-          opacity={0.5}
+          opacity={0.7}
           className="absolute hidden lg:block z-[1] left-[-100px] top-1/2 -translate-y-1/2"
         />
         <div className="relative">
