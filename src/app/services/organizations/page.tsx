@@ -84,7 +84,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-40px] top-[30%]" design="diagonal-lines" color="orange" size={320} animation="drift-diagonal" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[-40px] top-[30%]" design="diagonal-lines" color="orange" size={320} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -126,7 +126,7 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-50px] top-[20%]" design="diagonal-lines" color="teal" size={400} animation="drift-diagonal" opacity={0.7} />
+        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[-50px] top-[20%]" design="diagonal-lines" color="teal" size={400} animation="spin-slow" opacity={0.7} />
         <div className="relative">
           <Section background="subtle-bg">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

@@ -15,17 +15,11 @@ export default function FAQPage() {
       {/* Section 1 FAQ accordion (bg) */}
       <div className="relative">
         {/* 4 sunburst circles on the left in different sizes */}
-        <div className="hidden lg:block absolute left-[-60px] top-[5%] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="orange" size={400} animation="wobble" opacity={0.7} />
+        <div className="hidden lg:block absolute left-[-80px] top-[-60px] pointer-events-none z-[1]" aria-hidden="true">
+          <DecorativeCircle design="sunburst" color="orange" size={350} animation="spin-slow" opacity={0.7} />
         </div>
-        <div className="hidden lg:block absolute left-[30px] top-[35%] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="teal" size={280} animation="float" opacity={0.7} />
-        </div>
-        <div className="hidden lg:block absolute left-[-40px] top-[60%] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="orange" size={320} animation="drift-diagonal" opacity={0.7} />
-        </div>
-        <div className="hidden lg:block absolute left-[10px] top-[82%] pointer-events-none z-[1]" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="teal" size={250} animation="pulse-gentle" opacity={0.7} />
+        <div className="hidden lg:block absolute right-[-80px] bottom-[-60px] pointer-events-none z-[1]" aria-hidden="true">
+          <DecorativeCircle design="sunburst" color="teal" size={300} animation="spin-slow" opacity={0.7} />
         </div>
         <div className="relative">
           <Section background="bg">

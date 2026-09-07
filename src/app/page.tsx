@@ -23,7 +23,7 @@ export default function HomePage() {
           design="split-rings"
           color="orange"
           size={420}
-          animation="float"
+          animation="spin-slow"
           opacity={0.7}
           className="absolute hidden lg:block z-[1] left-[-120px] bottom-[-80px]"
         />
@@ -46,7 +46,7 @@ export default function HomePage() {
           design="sunburst"
           color="teal"
           size={300}
-          animation="drift"
+          animation="spin-slow"
           opacity={0.7}
           className="absolute hidden lg:block z-[1] right-[-60px] top-[-40px]"
         />
@@ -66,7 +66,7 @@ export default function HomePage() {
           design="swirl-arcs"
           color="orange"
           size={450}
-          animation="pulse-gentle"
+          animation="spin-slow"
           opacity={0.7}
           className="absolute hidden lg:block z-[1] left-[-100px] top-1/2 -translate-y-1/2"
         />

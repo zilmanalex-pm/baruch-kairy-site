@@ -29,7 +29,7 @@ export default function AboutPage() {
       <div className="relative">
         {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
         <div
-          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none opacity-[0.7] z-[1] animate-[float_8s_ease-in-out_infinite]"
+          className="hidden lg:block absolute left-[-80px] top-1/2 -translate-y-1/2 w-[550px] h-[550px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite]"
           aria-hidden="true"
         >
           <Image
