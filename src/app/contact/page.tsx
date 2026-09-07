@@ -7,6 +7,7 @@ import {
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr"
 import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { ContactForm } from "@/components/sections/ContactForm"
 import { META, CONTACT } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -47,7 +48,7 @@ export default function ContactPage() {
             </div>
 
             {/* Channel cards - equal-sized grid */}
-            <div className="max-w-[var(--max-width)] bg-subtle-bg rounded-lg py-xl px-md">
+            <div className="max-w-[var(--max-width)] bg-subtle-bg rounded-lg py-xl px-md mb-3xl">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#40798C]/15">
                 {CONTACT.channels.map((channel) => {
                   const Icon = iconMap[channel.iconName as keyof typeof iconMap]
@@ -76,6 +77,17 @@ export default function ContactPage() {
                   )
                 })}
               </div>
+            </div>
+
+            {/* Contact form */}
+            <div className="max-w-[var(--max-width-text)]">
+              <h2 className="font-heading text-[1.5rem] font-bold leading-[1.3] text-text mb-sm">
+                השאירו פרטים
+              </h2>
+              <p className="font-body text-base text-text-secondary mb-lg">
+                מלאו את הפרטים ואחזור אליכם בהקדם.
+              </p>
+              <ContactForm />
             </div>
           </Section>
         </div>
