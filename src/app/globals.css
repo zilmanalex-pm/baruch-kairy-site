@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scrollbar-gutter: stable;
+}
+
 /*
  * Design tokens from design-rules.md - Baruch Kairy Professional Site
  * All values are LOCKED. Do not modify without updating design-rules.md.
