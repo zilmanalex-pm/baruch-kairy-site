@@ -2,7 +2,7 @@
 
 html {
   overflow-x: clip;
-  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 /*
