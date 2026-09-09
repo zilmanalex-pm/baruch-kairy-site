@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Section, SectionDivider } from "@/components/ui/Section"
 import { ScrollReveal } from "@/components/ui/ScrollReveal"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { META, FAQ } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -14,13 +14,18 @@ export default function FAQPage() {
     <>
       {/* Section 1 FAQ accordion (bg) */}
       <div className="relative bg-bg">
-        {/* 4 sunburst circles on the left in different sizes */}
-        <div className="hidden lg:block absolute left-[20px] top-[-20px] pointer-events-none" aria-hidden="true">
-          <DecorativeCircle design="sunburst" color="orange" size={450} animation="spin-slow" opacity={0.7} />
-        </div>
-        <div className="hidden lg:block absolute right-[20px] bottom-[-20px] pointer-events-none" aria-hidden="true">
-          <DecorativeCircle design="split-rings" color="teal" size={320} animation="spin-slow" opacity={0.7} />
-        </div>
+        <GradientBlob
+          color="teal"
+          size={500}
+          opacity={0.2}
+          className="absolute hidden lg:block z-[1] left-[30px] top-[-20px]"
+        />
+        <GradientBlob
+          color="green"
+          size={380}
+          opacity={0.15}
+          className="absolute hidden lg:block z-[1] right-[30px] bottom-[-20px]"
+        />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="max-w-[var(--max-width-text)]">

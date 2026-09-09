@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { Section, SectionDivider } from "@/components/ui/Section"
 import { ScrollReveal } from "@/components/ui/ScrollReveal"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { IconCircle } from "@/components/ui/IconCircle"
 import {
   Brain,
@@ -27,20 +27,13 @@ export default function AboutPage() {
     <>
       {/* Section 1 Page title + personal narrative (bg) */}
       <div className="relative bg-bg">
-        {/* Legacy decorative orange half-circle accent — DO NOT MODIFY */}
-        <div
-          className="hidden lg:block absolute left-[20px] top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none opacity-[0.7] z-[1] animate-[spin-slow_45s_linear_infinite] rounded-full overflow-hidden"
-          aria-hidden="true"
-        >
-          <Image
-            src="/images/circle-orange-dots.png"
-            alt=""
-            fill
-            className="object-contain rounded-full"
-            sizes="450px"
-          />
-        </div>
-
+        <GradientBlob
+          color="teal"
+          size={550}
+          opacity={0.2}
+          className="absolute hidden lg:block z-[1] left-[20px] top-[10%]"
+        />
+        <div className="relative z-[2]">
         <Section background="none">
           <div className="max-w-[var(--max-width-text)] relative">
             <h1 className="font-heading text-[2.25rem] font-bold leading-[1.2] text-text">
@@ -66,17 +59,16 @@ export default function AboutPage() {
             </div>
           </div>
         </Section>
+        </div>
       </div>
 
       {/* Section 2 Approach (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <DecorativeCircle
-          design="swirl-arcs"
-          color="teal"
-          size={350}
-          animation="spin-slow"
-          opacity={0.7}
+        <GradientBlob
+          color="green"
+          size={450}
+          opacity={0.2}
           className="absolute hidden lg:block z-[1] right-[30px] top-[15%]"
         />
         <div className="relative z-[2]">

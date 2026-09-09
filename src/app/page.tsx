@@ -4,7 +4,7 @@ import { RoutingCards } from "@/components/sections/RoutingCards"
 import { TrustBar } from "@/components/sections/TrustBar"
 import { AboutPreview } from "@/components/sections/AboutPreview"
 import { ScrollReveal } from "@/components/ui/ScrollReveal"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { META, HOME } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -34,13 +34,11 @@ export default function HomePage() {
       {/* Section 2 Routing Cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <DecorativeCircle
-          design="sunburst"
+        <GradientBlob
           color="teal"
-          size={340}
-          animation="spin-slow"
-          opacity={0.7}
-          className="absolute hidden lg:block z-[1] right-[30px] top-[-30px]"
+          size={500}
+          opacity={0.2}
+          className="absolute hidden lg:block z-[1] right-[40px] top-[-60px]"
         />
         <div className="relative z-[2]">
           <RoutingCards
@@ -55,7 +53,6 @@ export default function HomePage() {
       {/* Section 3 Trust Bar (bg) */}
       <ScrollReveal>
       <div className="relative">
-
         <div className="relative z-[2]">
           <TrustBar
             badges={[...HOME.trustBar]}

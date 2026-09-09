@@ -16,7 +16,7 @@ import {
   Scales,
   Microphone,
 } from "@phosphor-icons/react/dist/ssr"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { META, ORGANIZATIONS, LECTURES } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function OrganizationsPage() {
       {/* Section 2 Four pillars as white icon cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[20px] top-[10%]" design="spirograph" color="teal" size={500} animation="spin-slow" opacity={0.7} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[10%]" color="teal" size={550} opacity={0.2} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
@@ -83,7 +83,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative bg-bg">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[20px] top-[25%]" design="diagonal-lines" color="orange" size={420} animation="spin-slow" opacity={0.7} />
+        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] top-[25%]" color="green" size={450} opacity={0.18} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -125,7 +125,7 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[20px] top-[15%]" design="dots-dense" color="teal" size={420} animation="spin-slow" opacity={0.7} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[15%]" color="teal" size={400} opacity={0.15} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

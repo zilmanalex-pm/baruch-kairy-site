@@ -8,7 +8,7 @@ import {
   Heartbeat,
   Signpost,
 } from "@phosphor-icons/react/dist/ssr"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { META, SERVICES } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function ServicesPage() {
     <>
       {/* Section 1 Page header (bg) */}
       <div className="relative bg-bg">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] left-[20px] top-[5%]" design="dots-spiral" color="orange" size={480} animation="spin-slow" opacity={0.7} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[5%]" color="teal" size={500} opacity={0.2} />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="max-w-[var(--max-width-text)]">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <DecorativeCircle className="absolute hidden lg:block z-[1] right-[20px] bottom-[0px]" design="swirl-arcs" color="teal" size={340} animation="spin-slow" opacity={0.7} />
+        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] bottom-[0px]" color="green" size={400} opacity={0.2} />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">

@@ -6,7 +6,7 @@ import {
   WhatsappLogo,
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr"
-import { DecorativeCircle } from "@/components/ui/DecorativeCircle"
+import { GradientBlob } from "@/components/ui/GradientBlob"
 import { ContactForm } from "@/components/sections/ContactForm"
 import { META, CONTACT } from "@/lib/content"
 
@@ -21,19 +21,18 @@ export default function ContactPage() {
   return (
     <>
       <div className="relative bg-bg">
-        {/* Decorative circles */}
-        <div
-          className="hidden lg:block absolute right-[20px] top-[10%] pointer-events-none z-[1]"
-          aria-hidden="true"
-        >
-          <DecorativeCircle design="dots-dense" color="teal" size={350} animation="spin-slow" opacity={0.7} />
-        </div>
-        <div
-          className="hidden lg:block absolute left-[20px] bottom-[5%] pointer-events-none z-[1]"
-          aria-hidden="true"
-        >
-          <DecorativeCircle design="diagonal-lines" color="orange" size={280} animation="spin-slow" opacity={0.7} />
-        </div>
+        <GradientBlob
+          color="teal"
+          size={500}
+          opacity={0.18}
+          className="absolute hidden lg:block z-[1] right-[30px] top-[10%]"
+        />
+        <GradientBlob
+          color="green"
+          size={350}
+          opacity={0.15}
+          className="absolute hidden lg:block z-[1] left-[30px] bottom-[5%]"
+        />
 
         <div className="relative z-[2]">
           <Section background="none">
