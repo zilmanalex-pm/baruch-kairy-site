@@ -23,7 +23,7 @@ export default function ServicesPage() {
     <>
       {/* Section 1 Page header (bg) */}
       <div className="relative bg-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[5%]" color="teal" size={500} opacity={0.2} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[5%]" color="teal" size={500} />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="max-w-[var(--max-width-text)]">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] bottom-[0px]" color="green" size={400} opacity={0.2} />
+        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] bottom-[0px]" color="green" size={400} />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">

@@ -30,7 +30,6 @@ export default function AboutPage() {
         <GradientBlob
           color="teal"
           size={550}
-          opacity={0.2}
           className="absolute hidden lg:block z-[1] left-[20px] top-[10%]"
         />
         <div className="relative z-[2]">
@@ -68,7 +67,6 @@ export default function AboutPage() {
         <GradientBlob
           color="green"
           size={450}
-          opacity={0.2}
           className="absolute hidden lg:block z-[1] right-[30px] top-[15%]"
         />
         <div className="relative z-[2]">

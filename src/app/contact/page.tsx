@@ -24,13 +24,11 @@ export default function ContactPage() {
         <GradientBlob
           color="teal"
           size={500}
-          opacity={0.18}
           className="absolute hidden lg:block z-[1] right-[30px] top-[10%]"
         />
         <GradientBlob
           color="green"
           size={350}
-          opacity={0.15}
           className="absolute hidden lg:block z-[1] left-[30px] bottom-[5%]"
         />
 

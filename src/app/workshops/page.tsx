@@ -37,7 +37,7 @@ export default function WorkshopsPage() {
       {/* Section 2 Three info cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[-20px]" color="teal" size={550} opacity={0.2} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[-20px]" color="teal" size={550} />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
@@ -93,7 +93,7 @@ export default function WorkshopsPage() {
       {/* Section 3 Lectures (bg) */}
       <ScrollReveal>
       <div className="relative bg-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] bottom-[-20px]" color="green" size={400} opacity={0.18} />
+        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] bottom-[-20px]" color="green" size={400} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

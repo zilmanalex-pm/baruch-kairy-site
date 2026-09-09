@@ -46,7 +46,7 @@ export default function OrganizationsPage() {
       {/* Section 2 Four pillars as white icon cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[10%]" color="teal" size={550} opacity={0.2} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[10%]" color="teal" size={550} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
@@ -83,7 +83,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative bg-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] top-[25%]" color="green" size={450} opacity={0.18} />
+        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] top-[25%]" color="green" size={450} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -125,7 +125,7 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[15%]" color="teal" size={400} opacity={0.15} />
+        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[15%]" color="teal" size={400} />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">

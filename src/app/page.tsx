@@ -37,7 +37,6 @@ export default function HomePage() {
         <GradientBlob
           color="teal"
           size={500}
-          opacity={0.2}
           className="absolute hidden lg:block z-[1] right-[40px] top-[-60px]"
         />
         <div className="relative z-[2]">

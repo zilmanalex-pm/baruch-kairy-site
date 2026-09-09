@@ -17,13 +17,11 @@ export default function FAQPage() {
         <GradientBlob
           color="teal"
           size={500}
-          opacity={0.2}
           className="absolute hidden lg:block z-[1] left-[30px] top-[-20px]"
         />
         <GradientBlob
           color="green"
           size={380}
-          opacity={0.15}
           className="absolute hidden lg:block z-[1] right-[30px] bottom-[-20px]"
         />
         <div className="relative z-[2]">
