@@ -4,6 +4,7 @@ interface HeroSectionProps {
   name?: string
   title?: string
   headline: string
+  headlineSub?: string
   subheadline: string
   imageSrc: string
   imageAlt: string
@@ -14,6 +15,7 @@ export function HeroSection({
   name,
   title,
   headline,
+  headlineSub,
   subheadline,
   imageSrc,
   imageAlt,
@@ -40,14 +42,19 @@ export function HeroSection({
             <h1 className={`font-heading text-[2.25rem] sm:text-[2.75rem] lg:text-[3rem] font-bold leading-[1.2] lg:leading-[1.1] text-text ${name ? "mt-lg" : ""}`}>
               {headline}
             </h1>
-            <p className="mt-md text-lg leading-[1.7] text-text-secondary max-w-[var(--max-width-text)]">
+            {headlineSub && (
+              <p className="mt-sm font-heading text-[1.25rem] sm:text-[1.5rem] leading-[1.4] text-text-secondary whitespace-pre-line">
+                {headlineSub}
+              </p>
+            )}
+            <p className="mt-md text-lg leading-[1.7] text-text-secondary max-w-[var(--max-width-text)] whitespace-pre-line">
               {subheadline}
             </p>
           </div>
 
           {/* Photo column left side in RTL */}
-          <div className="w-full lg:w-[40%] flex-shrink-0">
-            <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto lg:mx-0 rounded-lg overflow-hidden">
+          <div className="w-full lg:w-[35%] flex-shrink-0">
+            <div className="relative aspect-[4/5] w-full max-w-[340px] mx-auto lg:mx-0 rounded-lg overflow-hidden">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

@@ -14,9 +14,8 @@ import {
   House,
   Lightning,
   Scales,
-  Microphone,
 } from "@phosphor-icons/react/dist/ssr"
-import { GradientBlob } from "@/components/ui/GradientBlob"
+import { BotanicalSVG } from "@/components/ui/BotanicalSVG"
 import { META, ORGANIZATIONS, LECTURES } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -46,7 +45,7 @@ export default function OrganizationsPage() {
       {/* Section 2 Four pillars as white icon cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[10%]" color="teal" size={550} />
+        <BotanicalSVG variant={3} className="absolute hidden lg:block z-[1] left-[-10px] top-[5%] w-[400px] h-[520px] opacity-70" />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl text-center section-heading-accent">
@@ -58,7 +57,7 @@ export default function OrganizationsPage() {
                 return (
                   <div
                     key={pillar.title}
-                    className="bg-white rounded-[12px] border border-[#CFE0C3] p-[24px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(64,121,140,0.15)]"
+                    className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[24px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(64,121,140,0.15)]"
                   >
                     <div className="flex justify-center mb-md">
                       <IconCircle>
@@ -83,7 +82,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative bg-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] right-[30px] top-[25%]" color="green" size={450} />
+        <BotanicalSVG variant={1} className="absolute hidden lg:block z-[1] right-[-10px] top-[15%] w-[420px] h-[520px] opacity-65" />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -125,7 +124,7 @@ export default function OrganizationsPage() {
       {/* Section 4 Lectures (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <GradientBlob className="absolute hidden lg:block z-[1] left-[30px] top-[15%]" color="teal" size={400} />
+        <BotanicalSVG variant={4} className="absolute hidden lg:block z-[1] left-[-20px] top-[10%] w-[380px] h-[500px] opacity-65" />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
@@ -138,9 +137,8 @@ export default function OrganizationsPage() {
               {LECTURES.items.map((lecture) => (
                 <div
                   key={lecture.title}
-                  className="bg-white rounded-[12px] border border-[#CFE0C3] p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
+                  className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
                 >
-                  <div className="mb-sm"><IconCircle className="!w-[40px] !h-[40px]"><Microphone size={20} weight="regular" className="text-primary" /></IconCircle></div>
                   <h3 className="font-heading text-[16px] font-medium leading-[1.3] text-text mb-xs">
                     {lecture.title}
                   </h3>
@@ -150,9 +148,6 @@ export default function OrganizationsPage() {
                 </div>
               ))}
             </div>
-            <p className="text-base leading-[1.7] text-text-secondary mt-lg">
-              {LECTURES.contactPrompt} <a href={LECTURES.contactLinkHref} className="text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150">{LECTURES.contactLinkLabel}</a>
-            </p>
           </Section>
         </div>
       </div>

@@ -6,7 +6,7 @@ import {
   WhatsappLogo,
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr"
-import { GradientBlob } from "@/components/ui/GradientBlob"
+import { BotanicalSVG } from "@/components/ui/BotanicalSVG"
 import { ContactForm } from "@/components/sections/ContactForm"
 import { META, CONTACT } from "@/lib/content"
 
@@ -21,15 +21,13 @@ export default function ContactPage() {
   return (
     <>
       <div className="relative bg-bg">
-        <GradientBlob
-          color="teal"
-          size={500}
-          className="absolute hidden lg:block z-[1] right-[30px] top-[10%]"
+        <BotanicalSVG
+          variant={4}
+          className="absolute hidden lg:block z-[1] right-[-10px] top-[5%] w-[400px] h-[540px] opacity-70"
         />
-        <GradientBlob
-          color="green"
-          size={350}
-          className="absolute hidden lg:block z-[1] left-[30px] bottom-[5%]"
+        <BotanicalSVG
+          variant={3}
+          className="absolute hidden lg:block z-[1] left-[-10px] bottom-[5%] w-[380px] h-[500px] opacity-65"
         />
 
         <div className="relative z-[2]">

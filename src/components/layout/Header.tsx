@@ -43,19 +43,19 @@ export function Header() {
             alt="ברוך קאירי - פסיכולוג תעסוקתי"
             width={400}
             height={100}
-            className="h-[120px] w-auto sm:h-[150px]"
+            className="h-[150px] w-auto sm:h-[190px]"
             priority
           />
         </Link>
 
         {/* Desktop nav - left side in RTL */}
-        <nav className="hidden lg:flex items-center gap-[28px] mx-auto" aria-label="ניווט ראשי">
+        <nav className="hidden lg:flex items-center gap-[32px] mx-auto" aria-label="ניווט ראשי">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                "font-body text-[15px] whitespace-nowrap transition-colors duration-150",
+                "font-body text-[17px] whitespace-nowrap transition-colors duration-150",
                 pathname === item.href
                   ? "text-primary font-medium border-b-2 border-accent pb-[2px]"
                   : "text-text-secondary hover:text-primary"
@@ -66,7 +66,7 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-md bg-primary text-white font-body text-[14px] font-medium px-[20px] py-[8px] hover:bg-primary-dark transition-colors duration-150 whitespace-nowrap"
+            className="inline-flex items-center justify-center rounded-md bg-orange text-white font-body text-[15px] font-medium px-[22px] py-[9px] hover:bg-orange-dark transition-colors duration-150 whitespace-nowrap"
           >
             צור קשר
           </Link>
@@ -128,7 +128,7 @@ export function Header() {
           ))}
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-md bg-primary text-white font-body text-base font-medium px-xl py-md hover:bg-primary-dark transition-colors duration-150 mt-sm"
+            className="inline-flex items-center justify-center rounded-md bg-orange text-white font-body text-base font-medium px-xl py-md hover:bg-orange-dark transition-colors duration-150 mt-sm"
           >
             צור קשר
           </Link>

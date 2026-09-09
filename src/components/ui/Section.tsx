@@ -29,7 +29,7 @@ function Section({ className, background = "bg", narrow = false, children, ...pr
   return (
     <section
       className={cn(
-        "py-2xl sm:py-3xl lg:py-4xl",
+        "py-2xl sm:py-3xl lg:py-5xl",
         bgClasses[background],
         className
       )}
@@ -57,7 +57,7 @@ function SectionDivider({ className }: { className?: string }) {
       className={cn("flex justify-center py-md", className)}
       aria-hidden="true"
     >
-      <div className="w-[48px] h-[2px] bg-primary" />
+      <div className="w-[48px] h-[2px] bg-orange" />
     </div>
   )
 }

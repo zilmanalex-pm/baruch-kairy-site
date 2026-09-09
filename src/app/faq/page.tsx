@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { Section, SectionDivider } from "@/components/ui/Section"
 import { ScrollReveal } from "@/components/ui/ScrollReveal"
-import { GradientBlob } from "@/components/ui/GradientBlob"
+import { BotanicalSVG } from "@/components/ui/BotanicalSVG"
+import { BotanicalDecoration } from "@/components/ui/BotanicalDecoration"
 import { META, FAQ } from "@/lib/content"
 
 export const metadata: Metadata = {
@@ -14,15 +15,12 @@ export default function FAQPage() {
     <>
       {/* Section 1 FAQ accordion (bg) */}
       <div className="relative bg-bg">
-        <GradientBlob
-          color="teal"
-          size={500}
-          className="absolute hidden lg:block z-[1] left-[30px] top-[-20px]"
+        <BotanicalSVG
+          variant={5}
+          className="absolute hidden lg:block z-[1] left-[-10px] top-[-30px] w-[360px] h-[520px] opacity-70"
         />
-        <GradientBlob
-          color="green"
-          size={380}
-          className="absolute hidden lg:block z-[1] right-[30px] bottom-[-20px]"
+        <BotanicalDecoration
+          className="absolute hidden lg:block z-[1] right-[-30px] bottom-[-40px] w-[400px] h-[400px] opacity-65"
         />
         <div className="relative z-[2]">
           <Section background="none">
@@ -36,7 +34,7 @@ export default function FAQPage() {
                 {FAQ.items.map((faq, index) => (
                   <details
                     key={index}
-                    className="group border border-[#CFE0C3] rounded-lg bg-white shadow-[0_2px_8px_rgba(64,121,140,0.08)] transition-all duration-300 hover:shadow-[0_8px_24px_rgba(64,121,140,0.15)]"
+                    className="group border border-[#CFE0C3] border-s-[3px] border-s-accent rounded-lg bg-white shadow-[0_2px_8px_rgba(64,121,140,0.08)] transition-all duration-300 hover:shadow-[0_8px_24px_rgba(64,121,140,0.15)]"
                   >
                     <summary className="flex items-center justify-between cursor-pointer px-lg py-md font-body text-lg font-medium text-text hover:text-primary transition-colors duration-150 list-none [&::-webkit-details-marker]:hidden">
                       <span>{faq.question}</span>

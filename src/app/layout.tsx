@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Script from "next/script"
-import { heebo, frankRuhlLibre } from "@/lib/fonts"
+import { heebo } from "@/lib/fonts"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import "./globals.css"
@@ -94,7 +94,7 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${heebo.variable} ${frankRuhlLibre.variable}`}
+      className={heebo.variable}
     >
       <head>
         <script

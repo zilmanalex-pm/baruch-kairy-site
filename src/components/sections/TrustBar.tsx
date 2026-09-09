@@ -9,7 +9,7 @@ interface TrustBarProps {
 
 export function TrustBar({ badges }: TrustBarProps) {
   return (
-    <section className="bg-subtle-bg py-xl sm:py-2xl">
+    <section className="bg-[#DAE8D4] border-y border-[#CFE0C3] py-xl sm:py-2xl">
       <div className="mx-auto max-w-[var(--max-width)] px-lg sm:px-[40px] lg:px-0">
         <div className="flex flex-wrap justify-center items-center gap-y-lg">
           {badges.map((badge, index) => (
@@ -20,7 +20,7 @@ export function TrustBar({ badges }: TrustBarProps) {
                     <span className="font-heading text-[2rem] sm:text-[2.25rem] font-bold leading-[1.2] text-primary">
                       {badge.stat}
                     </span>
-                    <span className="font-body text-sm text-text-secondary mt-xs">
+                    <span className="font-body text-sm text-text-secondary mt-xs whitespace-pre-line">
                       {badge.label}
                     </span>
                   </>

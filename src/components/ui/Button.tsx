@@ -17,9 +17,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-primary text-white",
-          "hover:bg-primary-dark",
-          "active:bg-primary-active",
+          "bg-orange text-white",
+          "hover:bg-orange-dark",
+          "active:bg-orange-dark",
           "disabled:bg-subtle disabled:text-text-secondary",
         ].join(" "),
         secondary: [

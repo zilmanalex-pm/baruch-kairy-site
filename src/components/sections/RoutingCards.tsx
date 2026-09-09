@@ -50,7 +50,7 @@ export function RoutingCards({ sectionHeading, cards, transparentBg }: RoutingCa
                     className="inline-flex items-center gap-sm text-primary font-medium hover:text-primary-dark hover:underline transition-colors duration-150 mt-sm"
                   >
                     {card.linkLabel}
-                    <span aria-hidden="true" className="text-lg">←</span>
+                    <span aria-hidden="true" className="text-lg text-orange">←</span>
                   </Link>
                 </CardContent>
               </Card>
