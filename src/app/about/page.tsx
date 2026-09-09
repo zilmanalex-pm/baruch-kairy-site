@@ -13,6 +13,7 @@ import {
   Handshake,
   UsersThree,
   Heartbeat,
+  Heart,
 } from "@phosphor-icons/react/dist/ssr"
 import { META, ABOUT } from "@/lib/content"
 
@@ -65,14 +66,11 @@ export default function AboutPage() {
         <div className="relative bg-subtle-bg">
           <div className="relative z-[2]">
             <Section background="none">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-lg max-w-[var(--max-width-text)]">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-lg max-w-[var(--max-width)]">
                 {credentialSections.map((section) => {
                   const Icon = credentialIconMap[section.iconName as keyof typeof credentialIconMap]
                   return (
-                    <div
-                      key={section.heading}
-                      className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[24px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
-                    >
+                    <div key={section.heading}>
                       <div className="flex items-center gap-sm mb-md">
                         <IconCircle>
                           <Icon size={22} weight="duotone" className="text-primary" />
@@ -98,9 +96,14 @@ export default function AboutPage() {
               </div>
 
               {/* Personal note */}
-              <p className="mt-lg text-base leading-[1.7] text-text-secondary italic max-w-[var(--max-width-text)]">
-                {ABOUT.personalNote}
-              </p>
+              <div className="mt-lg flex gap-md items-center text-lg leading-[1.7] text-text-secondary max-w-[var(--max-width)]">
+                <div className="flex-shrink-0">
+                  <IconCircle>
+                    <Heart size={22} weight="duotone" className="text-primary" />
+                  </IconCircle>
+                </div>
+                <p>{ABOUT.personalNote}</p>
+              </div>
             </Section>
           </div>
         </div>

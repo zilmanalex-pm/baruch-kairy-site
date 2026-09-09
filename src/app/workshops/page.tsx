@@ -8,7 +8,7 @@ import {
   Trophy,
 } from "@phosphor-icons/react/dist/ssr"
 import { BotanicalSVG } from "@/components/ui/BotanicalSVG"
-import { META, WORKSHOPS, LECTURES } from "@/lib/content"
+import { META, WORKSHOPS } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: META.workshops.title,
@@ -71,55 +71,23 @@ export default function WorkshopsPage() {
               })}
             </div>
 
-            {/* "חשוב לדעת" callout */}
-            <div className="mt-xl bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[24px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] max-w-[var(--max-width-text)]">
+            {/* "חשוב לדעת" note */}
+            <div className="mt-xl max-w-[var(--max-width-text)]">
               <h3 className="font-heading text-lg font-bold text-text mb-sm">
                 {WORKSHOPS.importantNoteHeading}
               </h3>
               <p className="font-body text-base leading-[1.7] text-text-secondary">
                 {WORKSHOPS.importantNoteText}
               </p>
-            </div>
-
-            <p className="text-sm leading-[1.7] text-text-secondary mt-xl">
-              {WORKSHOPS.smallGroupNote}
-            </p>
-          </Section>
-        </div>
-      </div>
-      </ScrollReveal>
-
-      {/* Section 3 Lectures (bg) */}
-      <ScrollReveal>
-      <div className="relative bg-bg">
-        <BotanicalSVG variant={2} className="absolute hidden lg:block z-[1] right-[-10px] top-[10%] w-[360px] h-[520px] opacity-65" />
-        <div className="relative z-[2]">
-          <Section background="none">
-            <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
-              {LECTURES.sectionHeading}
-            </h2>
-            <p className="text-lg leading-[1.7] text-text-secondary mb-xl max-w-[var(--max-width-text)]">
-              {LECTURES.sectionIntro}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
-              {LECTURES.items.map((lecture) => (
-                <div
-                  key={lecture.title}
-                  className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
-                >
-                  <h3 className="font-heading text-[16px] font-medium leading-[1.3] text-text mb-xs">
-                    {lecture.title}
-                  </h3>
-                  <p className="font-body text-[14px] leading-[1.6] text-text-secondary">
-                    {lecture.subtitle}
-                  </p>
-                </div>
-              ))}
+              <p className="text-base leading-[1.7] text-text-secondary mt-md">
+                {WORKSHOPS.smallGroupNote}
+              </p>
             </div>
           </Section>
         </div>
       </div>
       </ScrollReveal>
+
     </>
   )
 }

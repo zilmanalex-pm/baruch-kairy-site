@@ -28,16 +28,9 @@ export function HeroSection({
           {/* Text column right side in RTL */}
           <div className="flex-1 text-center lg:text-start">
             {name && (
-              <div className="flex flex-wrap items-baseline gap-sm justify-center lg:justify-start">
-                <p className="font-heading text-[36px] font-bold leading-[1.2] text-text">
-                  {name}
-                </p>
-                {title && (
-                  <p className="font-body text-[16px] leading-[1.5] text-text-secondary">
-                    {title}
-                  </p>
-                )}
-              </div>
+              <p className="font-heading text-[1.35rem] sm:text-[1.5rem] font-medium leading-[1.4] text-text-secondary">
+                {name}{title ? `, ${title}` : ""}
+              </p>
             )}
             <h1 className={`font-heading text-[2.25rem] sm:text-[2.75rem] lg:text-[3rem] font-bold leading-[1.2] lg:leading-[1.1] text-text ${name ? "mt-lg" : ""}`}>
               {headline}
@@ -47,9 +40,11 @@ export function HeroSection({
                 {headlineSub}
               </p>
             )}
-            <p className="mt-md text-lg leading-[1.7] text-text-secondary max-w-[var(--max-width-text)] whitespace-pre-line">
-              {subheadline}
-            </p>
+            {subheadline && (
+              <p className="mt-md text-lg leading-[1.7] text-text-secondary max-w-[var(--max-width-text)] whitespace-pre-line">
+                {subheadline}
+              </p>
+            )}
           </div>
 
           {/* Photo column left side in RTL */}

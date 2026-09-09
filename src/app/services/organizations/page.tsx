@@ -137,7 +137,7 @@ export default function OrganizationsPage() {
               {LECTURES.items.map((lecture) => (
                 <div
                   key={lecture.title}
-                  className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)]"
+                  className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_6px_16px_rgba(64,121,140,0.14)]"
                 >
                   <h3 className="font-heading text-[16px] font-medium leading-[1.3] text-text mb-xs">
                     {lecture.title}
