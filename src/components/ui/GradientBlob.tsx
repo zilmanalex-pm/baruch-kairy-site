@@ -3,9 +3,9 @@
 export type BlobColor = "teal" | "green" | "orange"
 
 const colorMap: Record<BlobColor, string> = {
-  teal: "rgba(64, 121, 140, 0.5)",
-  green: "rgba(158, 193, 163, 0.5)",
-  orange: "rgba(255, 130, 0, 0.35)",
+  teal: "rgba(64, 121, 140, 0.7)",
+  green: "rgba(158, 193, 163, 0.7)",
+  orange: "rgba(255, 130, 0, 0.5)",
 }
 
 interface GradientBlobProps {
@@ -19,7 +19,7 @@ export function GradientBlob({
   color = "teal",
   size = 400,
   className = "",
-  opacity = 0.18,
+  opacity = 0.38,
 }: GradientBlobProps) {
   const fill = colorMap[color]
 
@@ -31,7 +31,7 @@ export function GradientBlob({
         height: size,
         opacity,
         background: `radial-gradient(circle at center, ${fill} 0%, transparent 70%)`,
-        filter: "blur(60px)",
+        filter: "blur(40px)",
       }}
       aria-hidden="true"
     />
