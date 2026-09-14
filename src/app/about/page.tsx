@@ -109,6 +109,24 @@ export default function AboutPage() {
                 </div>
                 <p>{ABOUT.personalNote}</p>
               </div>
+
+              {/* Conference photos */}
+              <div className="mt-xl grid grid-cols-1 sm:grid-cols-2 gap-lg max-w-[var(--max-width)]">
+                {ABOUT.conferencePhotos.map((photo, i) => (
+                  <div
+                    key={i}
+                    className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]"
+                  >
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                    />
+                  </div>
+                ))}
+              </div>
             </Section>
           </div>
         </div>
@@ -168,8 +186,17 @@ export default function AboutPage() {
                 </div>
 
                 {/* Photo column */}
-                <div className="w-full lg:w-[32%] flex-shrink-0">
-                  <div className="relative w-full h-full min-h-[360px] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                <div className="w-full lg:w-[32%] flex-shrink-0 flex flex-col gap-lg">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                    <Image
+                      src={ABOUT.clinicPhoto.src}
+                      alt={ABOUT.clinicPhoto.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 32vw"
+                    />
+                  </div>
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
                     <Image
                       src={ABOUT.photo.src}
                       alt={ABOUT.photo.alt}

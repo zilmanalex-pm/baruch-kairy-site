@@ -196,6 +196,20 @@ export const ABOUT = {
     src: "/images/baruch-lecture.png",
     alt: "ברוך קאירי מרצה בכנס מקצועי",
   },
+  conferencePhotos: [
+    {
+      src: "/images/baruch-conference-fixed.jpeg",
+      alt: "ברוך קאירי מרצה על במה בכנס מקצועי",
+    },
+    {
+      src: "/images/baruch-conference b-fixed.jpeg",
+      alt: "ברוך קאירי מרצה בפודיום באקדמיה תל אביב-יפו",
+    },
+  ],
+  clinicPhoto: {
+    src: "/images/baruch-clinic.jpg",
+    alt: "חלל הקליניקה של ברוך קאירי – סביבה חמה ומזמינה לפגישות ייעוץ",
+  },
 } as const
 
 // ─── SERVICES (INDIVIDUAL) ────────────────────────────────────────
