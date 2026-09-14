@@ -197,9 +197,9 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Photo column — clinic (horizontal) */}
-                <div className="w-full lg:w-[40%] flex-shrink-0">
-                  <div className="relative aspect-[16/10] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                {/* Photo column — clinic (horizontal, vertically centered) */}
+                <div className="w-full lg:w-[40%] flex-shrink-0 flex items-center">
+                  <div className="relative aspect-[16/10] w-full rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
                     <Image
                       src={ABOUT.clinicPhoto.src}
                       alt={ABOUT.clinicPhoto.alt}
