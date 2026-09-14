@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "ברוך קאירי פסיכולוג תעסוקתי",
     images: [
       {
-        url: "https://baruchkairy.co.il/images/og-image.png",
+        url: "https://www.baruch-kairy.org/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "ברוך קאירי פסיכולוג תעסוקתי מומחה",
@@ -44,15 +44,15 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://baruchkairy.co.il/#person",
+      "@id": "https://www.baruch-kairy.org/#person",
       name: "ברוך קאירי",
       jobTitle: "פסיכולוג תעסוקתי מומחה-מדריך",
       description:
         "פסיכולוג תעסוקתי מומחה-מדריך עם 30 שנות ניסיון. ייעוץ קריירה לפרט ובניית תהליכי מיון והערכה לארגונים.",
       telephone: "+972-52-515-1351",
       email: "kairybaruch@gmail.com",
-      url: "https://baruchkairy.co.il",
-      image: "https://baruchkairy.co.il/images/baruch-portrait3.png",
+      url: "https://www.baruch-kairy.org",
+      image: "https://www.baruch-kairy.org/images/baruch-portrait3.png",
       alumniOf: [
         {
           "@type": "CollegeOrUniversity",
@@ -67,20 +67,20 @@ const structuredData = {
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://baruchkairy.co.il/#business",
+      "@id": "https://www.baruch-kairy.org/#business",
       name: "ברוך קאירי ייעוץ תעסוקתי",
       description:
         "ייעוץ קריירה, ליווי בצמתים תעסוקתיים, ובניית תהליכי מיון והערכה לארגונים.",
       telephone: "+972-52-515-1351",
       email: "kairybaruch@gmail.com",
-      url: "https://baruchkairy.co.il",
-      image: "https://baruchkairy.co.il/images/baruch-portrait3.png",
+      url: "https://www.baruch-kairy.org",
+      image: "https://www.baruch-kairy.org/images/baruch-portrait3.png",
       address: {
         "@type": "PostalAddress",
         addressLocality: "תל אביב",
         addressCountry: "IL",
       },
-      founder: { "@id": "https://baruchkairy.co.il/#person" },
+      founder: { "@id": "https://www.baruch-kairy.org/#person" },
       priceRange: "$$",
     },
   ],
