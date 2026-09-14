@@ -55,7 +55,11 @@ export default function AboutPage() {
                     <Brain size={24} weight="duotone" className="text-primary" />
                   </IconCircle>
                 </div>
-                <p>{ABOUT.introNarrative}</p>
+                <div className="space-y-md">
+                  {ABOUT.introNarrative.map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </Section>
