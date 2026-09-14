@@ -14,6 +14,7 @@ import { META, SERVICES } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.services.title,
   description: META.services.description,
+  alternates: { canonical: "/services" },
 }
 
 const iconMap = { User, Heartbeat, Signpost } as const

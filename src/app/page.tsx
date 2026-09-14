@@ -11,6 +11,7 @@ import { META, HOME } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.home.title,
   description: META.home.description,
+  alternates: { canonical: "/" },
 }
 
 export default function HomePage() {

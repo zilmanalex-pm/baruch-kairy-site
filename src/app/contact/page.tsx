@@ -13,6 +13,7 @@ import { META, CONTACT } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.contact.title,
   description: META.contact.description,
+  alternates: { canonical: "/contact" },
 }
 
 const iconMap = { Phone, WhatsappLogo, EnvelopeSimple } as const

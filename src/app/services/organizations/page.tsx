@@ -21,6 +21,7 @@ import { META, ORGANIZATIONS } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.organizations.title,
   description: META.organizations.description,
+  alternates: { canonical: "/services/organizations" },
 }
 
 const pillarIconMap = { Fingerprint, House, Lightning, Scales } as const

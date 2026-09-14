@@ -8,6 +8,7 @@ import { META, FAQ } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.faq.title,
   description: META.faq.description,
+  alternates: { canonical: "/faq" },
 }
 
 export default function FAQPage() {

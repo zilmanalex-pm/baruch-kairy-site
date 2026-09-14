@@ -13,6 +13,7 @@ import { META, WORKSHOPS, LECTURES } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.workshops.title,
   description: META.workshops.description,
+  alternates: { canonical: "/workshops" },
 }
 
 const infoCardIconMap = { Users, ListChecks, Trophy } as const

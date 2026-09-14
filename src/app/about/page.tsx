@@ -20,6 +20,7 @@ import { META, ABOUT } from "@/lib/content"
 export const metadata: Metadata = {
   title: META.about.title,
   description: META.about.description,
+  alternates: { canonical: "/about" },
 }
 
 const credentialIconMap = { GraduationCap, ShieldChevron, Certificate, BookOpenText } as const

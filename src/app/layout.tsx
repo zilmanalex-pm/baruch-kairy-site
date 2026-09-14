@@ -13,12 +13,16 @@ import "./globals.css"
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? ""
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.baruch-kairy.org"),
   title: {
-    default: "ברוך קאירי פסיכולוג תעסוקתי | ייעוץ קריירה ומיון",
+    default: "ברוך קאירי — פסיכולוג תעסוקתי | ייעוץ קריירה ומיון",
     template: "%s | ברוך קאירי",
   },
   description:
-    "ברוך קאירי, פסיכולוג תעסוקתי מומחה עם 30 שנות ניסיון. ייעוץ קריירה וליווי בצמתים תעסוקתיים לפרט, מיון והערכה ובניית תהליכים לארגונים.",
+    "ברוך קאירי, פסיכולוג תעסוקתי מומחה עם 30 שנות ניסיון. ייעוץ קריירה וליווי בצמתים תעסוקתיים לפרט, מיון והערכה ובניית תהליכים לארגונים. שיחת היכרות ללא עלות.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "ברוך קאירי פסיכולוג תעסוקתי",
     images: [
       {
-        url: "https://www.baruch-kairy.org/images/og-image.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "ברוך קאירי פסיכולוג תעסוקתי מומחה",
