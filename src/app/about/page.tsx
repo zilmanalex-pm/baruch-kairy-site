@@ -197,15 +197,15 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Photo column — clinic */}
-                <div className="w-full lg:w-[32%] flex-shrink-0">
-                  <div className="relative w-full h-full min-h-[360px] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                {/* Photo column — clinic (horizontal) */}
+                <div className="w-full lg:w-[40%] flex-shrink-0">
+                  <div className="relative aspect-[16/10] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
                     <Image
                       src={ABOUT.clinicPhoto.src}
                       alt={ABOUT.clinicPhoto.alt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 32vw"
+                      sizes="(max-width: 1024px) 100vw, 40vw"
                     />
                   </div>
                 </div>
