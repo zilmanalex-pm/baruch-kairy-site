@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 
 interface BotanicalSVGProps {
-  variant: 1 | 2 | 3 | 4 | 5 | 6
+  variant: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
   className?: string
 }
 
@@ -13,6 +13,12 @@ export function BotanicalSVG({ variant, className }: BotanicalSVGProps) {
     4: <TealVine />,
     5: <MinimalistBranch />,
     6: <SpreadingVine />,
+    7: <FernFronds />,
+    8: <WillowDrape />,
+    9: <ScatteredLeaves />,
+    10: <TropicalLeaf />,
+    11: <BerryBranch />,
+    12: <SpiralVine />,
   }
 
   return (
@@ -292,6 +298,330 @@ function SpreadingVine() {
 
       {/* Sub-branch upper right */}
       <ellipse cx="295" cy="125" rx="14" ry="18" transform="rotate(-35 295 125)" fill="#40798C" opacity="0.7" />
+    </svg>
+  )
+}
+
+/* ─── Variant 7: Fern fronds with golden arch ─── */
+function FernFronds() {
+  return (
+    <svg viewBox="0 0 380 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Golden arch */}
+      <path
+        d="M60 420C60 220 160 80 280 60"
+        stroke="#D4882B" strokeWidth="40" strokeLinecap="round" opacity="0.2" fill="none"
+      />
+
+      {/* Main fern stem */}
+      <path d="M190 500C186 420 182 320 190 80" stroke="#4A6B6A" strokeWidth="2.5" strokeLinecap="round" />
+
+      {/* Right frond leaflets (bottom to top) */}
+      <g fill="#70A9A1">
+        <path d="M190 430C200 420 218 412 230 408C222 416 204 428 190 435Z" opacity="0.9" />
+        <path d="M230 408C238 398 252 392 262 390C256 396 242 406 230 412Z" opacity="0.75" />
+        <path d="M190 370C202 358 222 348 236 342C226 352 206 366 190 376Z" opacity="0.85" />
+        <path d="M236 342C246 332 262 326 274 324C266 330 250 340 236 348Z" opacity="0.7" />
+        <path d="M190 310C204 296 226 284 242 278C230 290 208 306 190 316Z" opacity="0.8" />
+        <path d="M242 278C252 268 268 260 280 258C272 264 258 274 242 284Z" opacity="0.65" />
+        <path d="M190 250C202 238 222 228 236 222C226 232 206 246 190 256Z" opacity="0.75" />
+        <path d="M190 190C200 180 216 172 228 168C220 176 204 188 190 196Z" opacity="0.7" />
+        <path d="M190 135C198 126 212 118 222 114C216 122 202 132 190 140Z" opacity="0.6" />
+      </g>
+
+      {/* Left frond leaflets */}
+      <g fill="#40798C">
+        <path d="M190 400C178 388 158 378 144 374C156 380 176 394 190 406Z" opacity="0.88" />
+        <path d="M144 374C132 364 116 358 104 356C114 360 130 370 144 380Z" opacity="0.72" />
+        <path d="M190 340C176 326 154 314 138 308C152 316 174 332 190 346Z" opacity="0.82" />
+        <path d="M138 308C124 298 108 292 96 290C108 294 124 304 138 314Z" opacity="0.68" />
+        <path d="M190 280C178 268 160 256 146 250C158 258 176 272 190 286Z" opacity="0.78" />
+        <path d="M190 220C180 210 164 200 152 196C162 202 178 216 190 226Z" opacity="0.72" />
+        <path d="M190 162C182 154 170 146 160 142C168 148 180 158 190 168Z" opacity="0.65" />
+      </g>
+
+      {/* Curling tip */}
+      <path d="M190 88C188 78 192 68 196 60C194 68 190 78 190 88Z" fill="#4A6B6A" opacity="0.5" />
+    </svg>
+  )
+}
+
+/* ─── Variant 8: Hanging willow / wisteria drape ─── */
+function WillowDrape() {
+  return (
+    <svg viewBox="0 0 360 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Cream blob top */}
+      <ellipse cx="180" cy="65" rx="120" ry="55" fill="#CFE0C3" opacity="0.4" />
+
+      {/* Main horizontal branch */}
+      <path d="M40 90C100 82 200 78 320 92" stroke="#1F363D" strokeWidth="3" strokeLinecap="round" />
+
+      {/* Hanging stems */}
+      <g stroke="#4A6B6A" strokeWidth="1.5" strokeLinecap="round" fill="none">
+        <path d="M80 86C78 150 82 250 76 380" />
+        <path d="M130 82C132 160 128 280 134 420" />
+        <path d="M180 80C178 170 182 310 176 460" />
+        <path d="M230 82C232 145 228 260 234 390" />
+        <path d="M280 88C278 165 282 290 276 440" />
+      </g>
+
+      {/* Small drooping leaves on stems */}
+      <g fill="#70A9A1">
+        {/* Stem 1 leaves */}
+        <ellipse cx="76" cy="160" rx="10" ry="14" transform="rotate(12 76 160)" opacity="0.8" />
+        <ellipse cx="80" cy="240" rx="11" ry="15" transform="rotate(-8 80 240)" opacity="0.75" />
+        <ellipse cx="74" cy="320" rx="10" ry="14" transform="rotate(10 74 320)" opacity="0.7" />
+        {/* Stem 2 leaves */}
+        <ellipse cx="134" cy="180" rx="11" ry="15" transform="rotate(-10 134 180)" opacity="0.82" />
+        <ellipse cx="128" cy="275" rx="12" ry="16" transform="rotate(8 128 275)" opacity="0.76" />
+        <ellipse cx="136" cy="365" rx="10" ry="14" transform="rotate(-6 136 365)" opacity="0.68" />
+        {/* Stem 3 leaves */}
+        <ellipse cx="176" cy="190" rx="12" ry="16" transform="rotate(6 176 190)" opacity="0.85" />
+        <ellipse cx="182" cy="295" rx="13" ry="17" transform="rotate(-10 182 295)" opacity="0.78" />
+        <ellipse cx="174" cy="400" rx="11" ry="15" transform="rotate(8 174 400)" opacity="0.7" />
+        {/* Stem 4 leaves */}
+        <ellipse cx="234" cy="165" rx="11" ry="15" transform="rotate(-8 234 165)" opacity="0.8" />
+        <ellipse cx="228" cy="255" rx="12" ry="16" transform="rotate(10 228 255)" opacity="0.74" />
+        <ellipse cx="236" cy="340" rx="10" ry="14" transform="rotate(-6 236 340)" opacity="0.68" />
+        {/* Stem 5 leaves */}
+        <ellipse cx="276" cy="185" rx="11" ry="15" transform="rotate(8 276 185)" opacity="0.78" />
+        <ellipse cx="282" cy="290" rx="12" ry="16" transform="rotate(-10 282 290)" opacity="0.72" />
+        <ellipse cx="274" cy="385" rx="10" ry="14" transform="rotate(6 274 385)" opacity="0.65" />
+      </g>
+
+      {/* Small accent dots (buds) */}
+      <g fill="#D4882B" opacity="0.5">
+        <circle cx="78" cy="380" r="4" />
+        <circle cx="134" cy="420" r="4" />
+        <circle cx="176" cy="458" r="4" />
+        <circle cx="234" cy="390" r="4" />
+        <circle cx="276" cy="438" r="4" />
+      </g>
+    </svg>
+  )
+}
+
+/* ─── Variant 9: Scattered floating leaves with teal arc ─── */
+function ScatteredLeaves() {
+  return (
+    <svg viewBox="0 0 380 500" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Teal arc */}
+      <path
+        d="M320 60C380 180 350 340 240 440"
+        stroke="#70A9A1" strokeWidth="35" strokeLinecap="round" opacity="0.18" fill="none"
+      />
+
+      {/* Golden dot cluster */}
+      <circle cx="95" cy="120" r="28" fill="#D4882B" opacity="0.25" />
+      <circle cx="125" cy="98" r="18" fill="#D4882B" opacity="0.2" />
+
+      {/* Scattered individual leaves — each at a different angle */}
+      <g fill="#4A6B6A">
+        <path d="M280 95C295 78 312 72 320 70C312 82 296 94 280 102Z" opacity="0.82" />
+        <path d="M148 175C136 158 130 140 130 130C140 142 150 160 156 178Z" opacity="0.78" />
+        <path d="M262 195C278 182 295 178 305 178C294 186 278 196 262 202Z" opacity="0.75" />
+        <path d="M112 260C98 248 88 232 86 222C96 232 108 248 116 264Z" opacity="0.8" />
+        <path d="M295 280C308 266 322 260 332 258C322 268 308 280 296 288Z" opacity="0.72" />
+        <path d="M165 320C152 305 146 288 146 278C154 290 164 306 170 322Z" opacity="0.76" />
+        <path d="M240 360C256 348 272 344 282 344C272 352 256 362 240 368Z" opacity="0.7" />
+        <path d="M100 390C88 375 82 358 82 348C90 360 100 376 106 392Z" opacity="0.74" />
+        <path d="M210 430C224 418 240 414 250 414C240 422 224 432 210 438Z" opacity="0.68" />
+      </g>
+
+      {/* A few accent leaves in lighter color */}
+      <g fill="#70A9A1">
+        <path d="M220 125C234 112 248 108 258 108C248 116 234 126 220 132Z" opacity="0.65" />
+        <path d="M175 240C162 225 156 208 156 198C164 210 174 226 180 242Z" opacity="0.6" />
+        <path d="M310 350C322 338 336 334 345 334C336 342 322 352 310 358Z" opacity="0.58" />
+      </g>
+
+      {/* Thin floating stems */}
+      <g stroke="#4A6B6A" strokeWidth="1" opacity="0.35">
+        <path d="M280 100L260 120" />
+        <path d="M148 178L160 200" />
+        <path d="M262 200L245 218" />
+        <path d="M112 264L128 282" />
+        <path d="M165 324L178 342" />
+        <path d="M240 365L225 382" />
+      </g>
+    </svg>
+  )
+}
+
+/* ─── Variant 10: Large tropical leaf (monstera-inspired) ─── */
+function TropicalLeaf() {
+  return (
+    <svg viewBox="0 0 400 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Cream oval behind */}
+      <ellipse cx="210" cy="260" rx="140" ry="185" fill="#CFE0C3" opacity="0.3" />
+
+      {/* Main stem */}
+      <path d="M200 500C198 420 195 340 200 120" stroke="#1F363D" strokeWidth="3" strokeLinecap="round" />
+
+      {/* Large leaf shape — right side */}
+      <path
+        d="M200 160C220 140 270 120 310 140C345 158 360 210 350 265C340 320 300 360 260 380C235 392 210 395 200 390Z"
+        fill="#40798C" opacity="0.7"
+      />
+      {/* Leaf cut-outs (monstera holes) */}
+      <ellipse cx="280" cy="200" rx="18" ry="24" fill="#CFE0C3" opacity="0.5" />
+      <ellipse cx="305" cy="260" rx="15" ry="20" fill="#CFE0C3" opacity="0.45" />
+      <ellipse cx="260" cy="310" rx="16" ry="22" fill="#CFE0C3" opacity="0.4" />
+
+      {/* Large leaf — left side */}
+      <path
+        d="M200 200C178 175 128 155 90 170C56 184 40 232 48 285C56 335 95 372 135 388C160 398 190 398 200 394Z"
+        fill="#70A9A1" opacity="0.65"
+      />
+      {/* Left leaf cut-outs */}
+      <ellipse cx="115" cy="235" rx="16" ry="22" fill="#CFE0C3" opacity="0.45" />
+      <ellipse cx="90" cy="295" rx="14" ry="19" fill="#CFE0C3" opacity="0.4" />
+      <ellipse cx="135" cy="340" rx="15" ry="20" fill="#CFE0C3" opacity="0.38" />
+
+      {/* Leaf veins */}
+      <g stroke="#1F363D" strokeWidth="1.2" opacity="0.25">
+        <path d="M200 180C240 170 290 165 330 180" />
+        <path d="M200 240C240 230 290 228 340 245" />
+        <path d="M200 300C235 296 270 300 300 315" />
+        <path d="M200 350C240 348 265 355 280 370" />
+        <path d="M200 210C165 198 125 192 80 205" />
+        <path d="M200 265C168 258 130 258 75 272" />
+        <path d="M200 320C172 316 140 320 105 335" />
+        <path d="M200 370C175 370 150 375 130 385" />
+      </g>
+
+      {/* Small accent leaf at top */}
+      <path d="M200 128C208 110 222 96 232 90C224 102 212 118 200 132Z" fill="#1F363D" opacity="0.6" />
+      <path d="M200 132C192 114 178 98 168 92C176 104 188 120 200 136Z" fill="#1F363D" opacity="0.55" />
+    </svg>
+  )
+}
+
+/* ─── Variant 11: Berry branch with small clustered circles ─── */
+function BerryBranch() {
+  return (
+    <svg viewBox="0 0 360 500" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Soft orange oval */}
+      <ellipse cx="260" cy="140" rx="65" ry="85" transform="rotate(-15 260 140)" fill="#D4882B" opacity="0.2" />
+
+      {/* Main branch */}
+      <path d="M180 480C175 400 178 300 185 180C190 120 200 75 215 40" stroke="#1F363D" strokeWidth="2.5" strokeLinecap="round" />
+
+      {/* Sub-branches */}
+      <g stroke="#1F363D" strokeWidth="1.5" strokeLinecap="round" fill="none">
+        <path d="M183 380C210 360 240 345 265 338" />
+        <path d="M184 310C155 288 130 272 108 262" />
+        <path d="M186 250C215 232 245 222 268 218" />
+        <path d="M189 195C162 178 138 168 118 162" />
+        <path d="M195 140C218 125 240 118 258 115" />
+        <path d="M183 430C158 418 135 412 115 408" />
+      </g>
+
+      {/* Berry clusters — groups of small circles */}
+      {/* Cluster 1 (right) */}
+      <g fill="#40798C">
+        <circle cx="268" cy="335" r="8" opacity="0.85" />
+        <circle cx="280" cy="325" r="6" opacity="0.75" />
+        <circle cx="275" cy="345" r="7" opacity="0.8" />
+        <circle cx="260" cy="328" r="5" opacity="0.7" />
+      </g>
+      {/* Cluster 2 (left) */}
+      <g fill="#70A9A1">
+        <circle cx="105" cy="258" r="8" opacity="0.82" />
+        <circle cx="95" cy="248" r="6" opacity="0.72" />
+        <circle cx="98" cy="268" r="7" opacity="0.78" />
+        <circle cx="112" cy="252" r="5" opacity="0.68" />
+      </g>
+      {/* Cluster 3 (right) */}
+      <g fill="#40798C">
+        <circle cx="272" cy="215" r="7" opacity="0.8" />
+        <circle cx="282" cy="206" r="6" opacity="0.72" />
+        <circle cx="278" cy="225" r="5" opacity="0.75" />
+        <circle cx="265" cy="210" r="5" opacity="0.68" />
+      </g>
+      {/* Cluster 4 (left) */}
+      <g fill="#70A9A1">
+        <circle cx="115" cy="158" r="7" opacity="0.78" />
+        <circle cx="105" cy="150" r="5" opacity="0.7" />
+        <circle cx="108" cy="168" r="6" opacity="0.74" />
+        <circle cx="122" cy="155" r="5" opacity="0.65" />
+      </g>
+      {/* Cluster 5 (right) */}
+      <g fill="#D4882B">
+        <circle cx="260" cy="112" r="6" opacity="0.65" />
+        <circle cx="270" cy="105" r="5" opacity="0.58" />
+        <circle cx="265" cy="120" r="5" opacity="0.6" />
+      </g>
+      {/* Cluster 6 (left, lower) */}
+      <g fill="#40798C">
+        <circle cx="112" cy="405" r="7" opacity="0.8" />
+        <circle cx="102" cy="398" r="5" opacity="0.72" />
+        <circle cx="105" cy="414" r="6" opacity="0.76" />
+      </g>
+
+      {/* Small accent leaves near branches */}
+      <g fill="#4A6B6A">
+        <path d="M230 355C238 348 248 345 254 344C248 350 238 356 230 360Z" opacity="0.5" />
+        <path d="M140 275C132 268 126 260 124 254C130 260 138 270 142 278Z" opacity="0.5" />
+        <path d="M230 235C238 228 248 225 254 224C248 230 238 238 230 242Z" opacity="0.45" />
+      </g>
+    </svg>
+  )
+}
+
+/* ─── Variant 12: Spiral vine with heart-shaped leaves ─── */
+function SpiralVine() {
+  return (
+    <svg viewBox="0 0 380 520" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      {/* Large teal circle behind */}
+      <circle cx="190" cy="270" r="130" fill="#70A9A1" opacity="0.12" />
+
+      {/* Spiral vine stem */}
+      <path
+        d="M190 500C180 460 155 420 140 380C120 330 130 280 165 240C195 205 240 195 270 220C295 240 298 280 275 315C255 345 220 355 195 340C175 328 170 300 185 280C198 264 218 260 232 270"
+        stroke="#4A6B6A" strokeWidth="2" strokeLinecap="round" fill="none"
+      />
+
+      {/* Continuation stem upward */}
+      <path
+        d="M232 270C245 278 248 260 240 245C230 225 210 215 190 220C168 226 155 248 162 270"
+        stroke="#4A6B6A" strokeWidth="1.5" strokeLinecap="round" fill="none"
+      />
+
+      {/* Heart-shaped leaves along the vine */}
+      <g fill="#40798C">
+        {/* Leaf 1 — bottom */}
+        <path d="M170 440C162 430 156 418 162 410C168 402 178 408 180 418C182 408 192 402 198 410C204 418 198 430 190 440C184 446 176 446 170 440Z" opacity="0.82" />
+        {/* Leaf 2 */}
+        <path d="M128 360C122 352 118 342 122 336C126 330 134 334 135 342C136 334 144 330 148 336C152 342 148 352 142 360C138 364 132 364 128 360Z" opacity="0.76" />
+        {/* Leaf 3 */}
+        <path d="M145 270C140 264 138 256 141 251C144 246 150 249 151 256C152 249 158 246 161 251C164 256 162 264 157 270C154 273 148 273 145 270Z" opacity="0.72" />
+      </g>
+
+      <g fill="#70A9A1">
+        {/* Leaf 4 */}
+        <path d="M250 296C244 288 240 278 244 272C248 266 256 270 257 278C258 270 266 266 270 272C274 278 270 288 264 296C260 300 254 300 250 296Z" opacity="0.78" />
+        {/* Leaf 5 */}
+        <path d="M280 245C274 238 270 228 274 222C278 216 286 220 287 228C288 220 296 216 300 222C304 228 300 238 294 245C290 249 284 249 280 245Z" opacity="0.7" />
+        {/* Leaf 6 — top */}
+        <path d="M208 232C204 226 202 220 204 216C206 212 212 214 213 220C214 214 220 212 222 216C224 220 222 226 218 232C216 234 210 234 208 232Z" opacity="0.65" />
+      </g>
+
+      {/* Small golden accent dots along vine */}
+      <g fill="#D4882B" opacity="0.45">
+        <circle cx="155" cy="400" r="3" />
+        <circle cx="135" cy="340" r="3" />
+        <circle cx="180" cy="260" r="3" />
+        <circle cx="260" cy="280" r="3" />
+        <circle cx="290" cy="235" r="3" />
+      </g>
+
+      {/* Tendrils / curling whiskers */}
+      <g stroke="#4A6B6A" strokeWidth="1" opacity="0.35" fill="none">
+        <path d="M170 430C158 435 148 432 145 425" />
+        <path d="M130 350C118 348 112 340 114 332" />
+        <path d="M262 290C272 295 278 290 278 282" />
+        <path d="M145 260C135 255 128 260 128 268" />
+      </g>
     </svg>
   )
 }

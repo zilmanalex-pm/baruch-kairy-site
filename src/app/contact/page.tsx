@@ -26,7 +26,7 @@ export default function ContactPage() {
           className="absolute hidden lg:block z-[1] right-[-10px] top-[5%] w-[400px] h-[540px] opacity-70"
         />
         <BotanicalSVG
-          variant={3}
+          variant={12}
           className="absolute hidden lg:block z-[1] left-[-10px] bottom-[5%] w-[380px] h-[500px] opacity-65"
         />
 

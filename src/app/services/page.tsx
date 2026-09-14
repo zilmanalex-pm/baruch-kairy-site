@@ -42,7 +42,7 @@ export default function ServicesPage() {
       {/* Section 2 Service cards (subtle-bg) */}
       <ScrollReveal>
       <div className="relative bg-subtle-bg">
-        <BotanicalSVG variant={5} className="absolute hidden lg:block z-[1] right-[20px] top-[15%] w-[360px] h-[520px] opacity-65" />
+        <BotanicalSVG variant={8} className="absolute hidden lg:block z-[1] right-[20px] top-[15%] w-[360px] h-[520px] opacity-65" />
         <div className="relative z-[2]">
           <Section background="none">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg">

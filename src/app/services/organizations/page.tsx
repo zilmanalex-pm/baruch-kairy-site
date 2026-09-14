@@ -16,7 +16,7 @@ import {
   Scales,
 } from "@phosphor-icons/react/dist/ssr"
 import { BotanicalSVG } from "@/components/ui/BotanicalSVG"
-import { META, ORGANIZATIONS, LECTURES } from "@/lib/content"
+import { META, ORGANIZATIONS } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: META.organizations.title,
@@ -82,7 +82,7 @@ export default function OrganizationsPage() {
       {/* Section 3 Service cards (bg) */}
       <ScrollReveal>
       <div className="relative bg-bg">
-        <BotanicalSVG variant={1} className="absolute hidden lg:block z-[1] right-[-10px] top-[15%] w-[420px] h-[520px] opacity-65" />
+        <BotanicalSVG variant={9} className="absolute hidden lg:block z-[1] right-[-10px] top-[15%] w-[420px] h-[520px] opacity-65" />
         <div className="relative z-[2]">
           <Section background="none">
             <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-xl section-heading-accent">
@@ -121,37 +121,6 @@ export default function OrganizationsPage() {
       </div>
       </ScrollReveal>
 
-      {/* Section 4 Lectures (subtle-bg) */}
-      <ScrollReveal>
-      <div className="relative bg-subtle-bg">
-        <BotanicalSVG variant={4} className="absolute hidden lg:block z-[1] left-[-20px] top-[10%] w-[380px] h-[500px] opacity-65" />
-        <div className="relative z-[2]">
-          <Section background="none">
-            <h2 className="font-heading text-[1.875rem] font-bold leading-[1.3] text-text mb-md section-heading-accent">
-              {LECTURES.sectionHeading}
-            </h2>
-            <p className="text-lg leading-[1.7] text-text-secondary mb-xl max-w-[var(--max-width-text)]">
-              {LECTURES.sectionIntro}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
-              {LECTURES.items.map((lecture) => (
-                <div
-                  key={lecture.title}
-                  className="bg-white rounded-[12px] border border-[#CFE0C3] border-s-[3px] border-s-accent p-[20px] shadow-[0_2px_8px_rgba(64,121,140,0.08)] transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_6px_16px_rgba(64,121,140,0.14)]"
-                >
-                  <h3 className="font-heading text-[16px] font-medium leading-[1.3] text-text mb-xs">
-                    {lecture.title}
-                  </h3>
-                  <p className="font-body text-[14px] leading-[1.6] text-text-secondary">
-                    {lecture.subtitle}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </Section>
-        </div>
-      </div>
-      </ScrollReveal>
     </>
   )
 }

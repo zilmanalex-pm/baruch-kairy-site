@@ -16,7 +16,7 @@ export default function FAQPage() {
       {/* Section 1 FAQ accordion (bg) */}
       <div className="relative bg-bg">
         <BotanicalSVG
-          variant={5}
+          variant={11}
           className="absolute hidden lg:block z-[1] left-[-10px] top-[-30px] w-[360px] h-[520px] opacity-70"
         />
         <BotanicalDecoration

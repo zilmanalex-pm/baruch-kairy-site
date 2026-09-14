@@ -133,7 +133,7 @@ export default function AboutPage() {
       <ScrollReveal>
         <div className="relative bg-subtle-bg">
           <BotanicalSVG
-            variant={4}
+            variant={7}
             className="absolute hidden lg:block z-[1] right-[-10px] top-[10%] w-[400px] h-[540px] opacity-70"
           />
           <div className="relative z-[2]">
