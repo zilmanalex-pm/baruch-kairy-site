@@ -36,7 +36,6 @@ export function Footer() {
               </a>
             </div>
           </div>
-        </div>
 
           {/* Column 3: Social links */}
           <div className="flex gap-md items-center">
