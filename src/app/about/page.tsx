@@ -115,13 +115,26 @@ export default function AboutPage() {
         </div>
       </ScrollReveal>
 
-      {/* Section 3 — Closing narrative + conference photo (bg) */}
+      {/* Section 3 — Closing narrative with conference photos on both sides (bg) */}
       <ScrollReveal>
         <div className="relative bg-bg">
           <div className="relative z-[2]">
             <Section background="none">
               <div className="flex flex-col lg:flex-row gap-xl lg:gap-2xl items-stretch max-w-[var(--max-width)]">
-                {/* Text column */}
+                {/* Conference photo 1 (right side visually in RTL) */}
+                <div className="w-full lg:w-[28%] flex-shrink-0">
+                  <div className="relative w-full h-full min-h-[360px] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                    <Image
+                      src={ABOUT.conferencePhotos[0].src}
+                      alt={ABOUT.conferencePhotos[0].alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 28vw"
+                    />
+                  </div>
+                </div>
+
+                {/* Text column (center) */}
                 <div className="flex-1">
                   <div className="flex gap-md items-start text-lg leading-[1.7] text-text-secondary">
                     <div className="flex-shrink-0 mt-1">
@@ -133,15 +146,15 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Conference photo */}
-                <div className="w-full lg:w-[32%] flex-shrink-0">
+                {/* Conference photo 2 (left side visually in RTL) */}
+                <div className="w-full lg:w-[28%] flex-shrink-0">
                   <div className="relative w-full h-full min-h-[360px] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
                     <Image
-                      src={ABOUT.conferencePhotos[0].src}
-                      alt={ABOUT.conferencePhotos[0].alt}
+                      src={ABOUT.conferencePhotos[1].src}
+                      alt={ABOUT.conferencePhotos[1].alt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 32vw"
+                      sizes="(max-width: 1024px) 100vw, 28vw"
                     />
                   </div>
                 </div>
@@ -184,24 +197,15 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Photo column */}
-                <div className="w-full lg:w-[38%] flex-shrink-0 flex flex-col gap-lg">
-                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
-                    <Image
-                      src={ABOUT.conferencePhotos[1].src}
-                      alt={ABOUT.conferencePhotos[1].alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 38vw"
-                    />
-                  </div>
-                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
+                {/* Photo column — clinic */}
+                <div className="w-full lg:w-[32%] flex-shrink-0">
+                  <div className="relative w-full h-full min-h-[360px] rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(64,121,140,0.12)]">
                     <Image
                       src={ABOUT.clinicPhoto.src}
                       alt={ABOUT.clinicPhoto.alt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 38vw"
+                      sizes="(max-width: 1024px) 100vw, 32vw"
                     />
                   </div>
                 </div>
