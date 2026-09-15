@@ -135,6 +135,12 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        {/* UserWay accessibility widget */}
+        <Script
+          src="https://cdn.userway.org/widget.js"
+          data-account="zFfvFLBdXr"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

@@ -136,14 +136,9 @@ export default function AboutPage() {
 
                 {/* Text column (center) */}
                 <div className="flex-1">
-                  <div className="flex gap-md items-start text-lg leading-[1.7] text-text-secondary">
-                    <div className="flex-shrink-0 mt-1">
-                      <IconCircle>
-                        <GraduationCap size={24} weight="duotone" className="text-primary" />
-                      </IconCircle>
-                    </div>
-                    <p>{ABOUT.closingNarrative}</p>
-                  </div>
+                  <p className="text-lg leading-[1.7] text-text-secondary">
+                    {ABOUT.closingNarrative}
+                  </p>
                 </div>
 
                 {/* Conference photo 2 (left side visually in RTL) */}
