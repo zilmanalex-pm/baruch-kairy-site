@@ -148,7 +148,7 @@ export default function AboutPage() {
                       src={ABOUT.conferencePhotos[1].src}
                       alt={ABOUT.conferencePhotos[1].alt}
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                       sizes="(max-width: 1024px) 100vw, 28vw"
                     />
                   </div>
